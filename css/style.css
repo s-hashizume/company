@@ -1,7 +1,8 @@
 @charset "utf-8";
-
+/*------------------------------------------全体に対する指定----------------------------------*/
 html {
     height: 100%;
+    font-size: 100%;
 }
 li {
     list-style: none;
@@ -18,8 +19,14 @@ body {
     line-height: 1.5;
     font-weight: 500;/*初期値が400なので少し太め*/
     word-wrap: break-word;/*IEが独自採用したもので必要に応じて途中改行を行う*/
+    line-height: 1.5;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ 明朝", serif;;
 }
 
+.container {
+    width: 100%;
+}
+/*------------------------------------------ヘッダーに対する指定----------------------------------*/
 #header {
     position: fixed;
     top: 0;
@@ -110,94 +117,106 @@ body {
     font-size: 15px;
     font-weight: 500;
 }
-
+/*------------------------------------------トップに対する指定----------------------------------*/
 .top {
 
 }
 
-.top-wrapper {
+.top-contents {
+}
+
+.top-contents-wrap {
     margin-top: 120px;
-    height: 67vw;
+    height: 965px;
     position: relative;
+    overflow: hidden;
 }
 
-.top-wrapper-character {
+.top-contents-wrap-character {
     position: absolute;
-    left: 150px;
-    top: 186px;
-    z-index: 2;
+    top: 140px;
+    left: 128px;
+
+    
 }
 
-.top-wrapper-character-type {
-    font-size: 133.45px;
-    line-height: 0.9;
+.character {
+    font-size: 100px;
+    line-height: 103px;
     display: flex;
     flex-direction: column;
+    letter-spacing: -2.3px;
     align-items: flex-start;
-    font-family: minion-pro, serif;
-    letter-spacing: -0.02em;
-    font-weight: 400;
+    font-family: minion-Pro, serif;
 }
 
-.top-wrapper-character-type span {
-    display: inline-flex;
-    padding: 0.04em 0;
+.character span {
+    padding: 4.6px 0;
 }
 
-.top-wrapper-character h1 {
-    font-size: 18px;
+.text {
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ 明朝", serif;
-    margin-top: 29px;
-    font-weight: 100;
-    color: rgb(25, 25, 25);
-}
-.top-wrapper:before {
-    content: "";  
-    background: #F0F4F8;
-    position: absolute;
-    top: 380px;
-    bottom: 260px;
-    width: calc(100% - 4rem);
-    height: 613px;
+    font-size: 18px;
+    line-height: 28.8px;
+    letter-spacing: 0.18px;
+    padding: 29px 0;
+    font-weight: 500;
+
 }
 
-.top-wrapper-photo img {
-    width: 981px;
-    height: 1286px;
+.top-contents-wrap-image {
+    width: 736px;
     position: absolute;
     top: 0;
-    left: 940px;
+    left: 49%;
+    overflow: hidden;
 }
 
-.top-purpose {
-    padding-bottom: 163px;
-    margin-top: -72px;
-    position: relative;
-    z-index: 10;
+.swiper {
+
 }
 
-.purpose-wrappre{
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 64px;
+.swiper-wrapper {
+
 }
 
-.purpose-wrappre-container {
+.swiper-slide {
+
+}
+
+
+.purpose {}
+
+.p-container{}
+
+.p-c-lead{
     display: flex;
 }
 
-.purpose-head {
-    font-family: minion-pro, serif;
-    font-weight: 400;
+
+.p-c-l__head{}
+
+.p-c-l__head h2 {
     font-size: 20px;
-    width: 234px;
-    padding-left: 95px;
+    font-family: serif;
+    font-weight: 400;
 }
-.purpose-head h2{}
 
-.purpose-body{}
+.p-c-l__body{
+    color: #fff;
+    font-size: 50px;
+    width: 1078px;
+}
 
-.purpose-body-uppeer{}
+.row1{
+     width: 624.5px;
+     background-color: #C70D2E;
+     padding: 14px 10px 8px;
+}
 
-.purpose-body-lowwer{}
+.row2{
+    width: 727px;
+    margin-left: 180px;
+    background-color: #C70D2E;
+    padding: 14px 10px 8px;
+}
