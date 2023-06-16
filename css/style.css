@@ -591,6 +591,42 @@ body {
     max-width: 100%;
     vertical-align: middle;
 }
+/*-----------------------------------------------contactに対する指定--------------------------*/
+
+
+.contact{}
+
+.contact-container{}
+
+.contact-wrap{}
+
+.contact-recruit, .contact-inquiry{
+    border-top: 1px solid #D9D9D9;
+}
+
+.recruit-link{
+    height: 417px;
+}
+
+.recruit-container{
+    background: url(../images/recrute-bg.png);
+}
+
+.recruit-wrap{}
+
+.recruit-title{}
+
+.recruit-title h2{}
+
+.recruit-body{}
+
+.recruit-body h3 {}
+
+.recruit-body p {}
+
+.recruit-btn {}
+
+.recruit-btn-simbol{}
 
 
 /*------------------------------------------------------サイドバーに対する指定----------------------------------------------------------------------------------*/
