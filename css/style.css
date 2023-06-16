@@ -504,6 +504,95 @@ body {
 .service-items-title-btn-icon svg {
 
 }
+
+/*-----------------------------------achievementsに対する指定------------------------------*/
+
+.achievements{
+    padding: 110px 0;
+    position: relative;
+}
+
+.achievements::before {
+    content: "";
+    background: #D9D9D9;
+    display: block;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.achievements-container{
+    padding: 0 128px;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.achievements-wrap{
+    display: flex;
+}
+
+.awards{
+    width: 500px;
+    flex: 1 0 auto;
+}
+
+.awards-title{
+
+}
+
+.awards-title h2{
+    font-size: 32px;
+}
+
+.awards-li{
+    font-size: 15px;
+    font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
+    margin-bottom: 20px;
+}
+
+.awards-li li{
+    margin-top: 32px;
+}
+
+.awards-athor{
+    padding: 20px 20px 20px 0;
+    border-bottom: 1px solid #C80D2F;
+    color: #C70D2E;
+    display: inline-flex;
+    align-items: center;
+}
+
+.awards-athor-btn{}
+
+.awards-athor-text{}
+
+.client{}
+
+.client-title{}
+
+.client-title h2{
+    font-size: 32px;
+}
+
+.client-text{
+    margin-top: 32px;
+    font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
+}
+
+.client-logos{
+    margin: 46px 0 0 7px;
+
+}
+
+.client-logos img{
+    width: 639px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
 /*------------------------------------------------------サイドバーに対する指定----------------------------------------------------------------------------------*/
 .aside-container {
 
