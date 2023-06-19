@@ -600,34 +600,80 @@ body {
 
 .contact-wrap{}
 
-.contact-recruit, .contact-inquiry{
+.contact-recruit{
     border-top: 1px solid #D9D9D9;
 }
 
 .recruit-link{
     height: 417px;
+    display: block;
+    background-color: #fff;
+}
+
+.action-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: 0.6s;
 }
 
 .recruit-container{
-    background: url(../images/recrute-bg.png);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 128px;
 }
 
-.recruit-wrap{}
+.recruit-wrap{
+    display: flex;
+    padding-top: 149px;
+}
 
-.recruit-title{}
+.recruit-title{
+    font-family: minion-pro, serif;
+    font-weight: 500;
+    width: 384px;
+}
 
-.recruit-title h2{}
+.recruit-title h2{
+    font-size: 64px;
+    color: #191919;
+}
 
-.recruit-body{}
+.recruit-body{
+    padding-right: 70px;
+    color: #191919;
+    width: 794px;
+}
 
-.recruit-body h3 {}
+.recruit-body h3 {
+    margin-top: 0;
+    font-size: 32px;
+    line-height: 48px;
+}
 
-.recruit-body p {}
+.recruit-body p {
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 27px;
+}
 
 .recruit-btn {}
 
 .recruit-btn-simbol{}
 
+
+.contact-inquiry{
+    border-top: 1px solid #D9D9D9;
+}
 
 /*------------------------------------------------------サイドバーに対する指定----------------------------------------------------------------------------------*/
 .aside-container {
