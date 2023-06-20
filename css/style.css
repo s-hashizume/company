@@ -23,6 +23,11 @@ body {
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ 明朝", serif;;
 }
 
+svg {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 .container {
     width: 100%;
 }
@@ -36,7 +41,7 @@ body {
     width: 100%;
     height: 120px;/*回答ではvar(--header-height)としている*/
     border-bottom: 1px solid #D9D9D9;
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -48,8 +53,8 @@ body {
 .header-wrapper-title {
     position: absolute;
     opacity: 1;
-    left: 4rem;
-    top: 2.125rem;
+    left: 64px;
+    top: 34px;
 }
 
 .header-wrapper-title img {
@@ -59,19 +64,17 @@ body {
 .header-wrapper-nav {
     opacity: 1;
     position: absolute;
-    right: 347px;
+    right: 260px;
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-.header-wrapper-nav {
 
-}
 
 .header-wrapper-nav-list {
     display: flex;
-    gap: 2rem;
+    gap: 32px;
 }
 
 .header-wrapper-nav-list li {
@@ -87,6 +90,11 @@ body {
     cursor: pointer;
 }
 
+.header-wrapper-menu-button i {
+    font-size: 0;/*これは何？*/
+    margin-left: 8px;
+}
+
 .header-wrapper-nav-list svg {
     width: 10px;
     height: auto;
@@ -98,21 +106,34 @@ body {
     color: #191919;
 }
 
+.header-nav__listLv2 {
+    margin-top: 24px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    display: block;
+}
+
+.header-nav__listLv2 li {
+    width: 220px;
+    border-bottom: 1px solid #F0F4F8;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);/*表示領域を制限することができる*/
+    transition: clip-path 0.3s cubic-bezier(0.23, 1, 0.32, 1)
+}
+
 .header-wrapper-contact {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    width: 11.64%;
 }
 
 .header-wrapper-contact a {
+    display: flex;
     width: 224px;
-    height: 168px;
+    height: 120px;
     background: #C80D2F;
     color: #fff;
-    width: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 15px;
@@ -133,20 +154,31 @@ body {
     overflow: hidden;
 }
 
+.top-contents-wrap::before {
+    content: "";
+    background: #F0F4F8;
+    display: block;
+    position: absolute;
+    top: 309px;
+    left: 64px;
+    height: 460px;
+    width: 1376px;
+    z-index: -1;
+}
 .top-contents-wrap-character {
     position: absolute;
-    top: 186.5px;
+    top: 140px;
     left: 128px;
 
     
 }
 
 .character {
-    font-size: 140px;
+    font-size: 115px;
     line-height: 103px;
     display: flex;
     flex-direction: column;
-    letter-spacing: -2.3px;
+    letter-spacing: -8px;
     align-items: flex-start;
     font-family: minion-Pro, serif;
 }
@@ -178,7 +210,7 @@ body {
 }
 
 .swiper-wrapper {
-
+    z-index: -1;
 }
 
 .swiper-slide {
@@ -205,6 +237,17 @@ body {
     line-height: 1;
     position: absolute;
     top: -72px;
+}
+
+.p-c-lead::before {
+    content: "";
+    background: #F0F4F8;
+    position: absolute;
+    top: 0;
+    left: 290px;
+    width: 560px;
+    height: 263px;
+    z-index: -1;
 }
 
 
@@ -242,11 +285,54 @@ body {
 
 .media {
     padding-top: 50px;
+    overflow: hidden;/*--なんでここに入れた？--*/
 }
 
-.l-container{
-
+.media-container{
+    padding: 0 128px;
 }
+
+.media-top-blog__wrap {
+    display: grid;
+    grid-template-areas: "head ctrl more" "slide slide slide";
+    grid-template-columns: 1fr auto auto;
+}
+
+.media-top-blog__head{
+    grid-area: head;
+}
+
+.media-top-blog__head h2 {
+    font-size: 64px;
+    line-height: 64px;
+    font-family: minion-pro, serif;
+}
+
+.media-ctrl{
+    margin: 20px 42px 0 0;
+    padding-left: 32px;
+    display: flex;
+    grid-area: ctrl;
+    align-self: center;/*なにこれ*/
+    justify-content: flex-end;
+    position: relative;
+}
+
+.media-slide{
+    grid-area: slide;
+    position: relative;
+    width: 320px;
+    margin-top: 38px;
+    z-index: 0;
+}
+
+.p-top-blog__more{
+    grid-area: more;
+    align-self: center;
+    text-align: right;
+    margin-top: 20px;
+}
+
 
 .media-title {
     font-size: 64px;
@@ -599,7 +685,7 @@ body {
 .contact-container{}
 
 .contact-wrap{}
-
+/*-----------------recruteに対する指定----------------*/
 .contact-recruit{
     border-top: 1px solid #D9D9D9;
 }
@@ -640,6 +726,7 @@ body {
     font-family: minion-pro, serif;
     font-weight: 500;
     width: 384px;
+    flex: 0 0 auto;
 }
 
 .recruit-title h2{
@@ -650,7 +737,7 @@ body {
 .recruit-body{
     padding-right: 70px;
     color: #191919;
-    width: 794px;
+    flex: 0 0 auto;
 }
 
 .recruit-body h3 {
@@ -665,14 +752,299 @@ body {
     font-size: 15px;
     line-height: 27px;
 }
+.recruit-btn{
+    position: absolute;
+    bottom: calc(50% - 3rem);
+    right: 4rem;
+}
 
-.recruit-btn {}
+.recruit-btn-simbol{
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C80D2F;
+    border-radius: 100%;
+    transition: 0.3s
+}
 
-.recruit-btn-simbol{}
+.recruit-btn-simbol::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #C80D2F;
+    border-radius: 100%;
+    transform: scale(0);
+}
 
+
+.c-btn-circle_ico{
+    width: 14px;
+    position: relative;
+    fill: #C80D2F;
+    height: auto;
+    font-size: 0;
+    transition: 0.3s;
+    max-width: 100%;
+    vertical-align: middle;
+}
+/*---------------inquiryに対する指定------------------*/
 
 .contact-inquiry{
     border-top: 1px solid #D9D9D9;
+}
+
+.inquiry-link{
+    height: 417px;
+    display: block;
+    background-color: #fff;
+}
+
+
+.action-bg img{}
+
+.iquiry-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 128px;
+}
+
+.inquiry-wrap{
+    display: flex;
+    padding-top: 149px;
+}
+
+.inquiry-title{
+    font-family: minion-pro, serif;
+    font-weight: 500;
+    width: 384px;
+    flex: 0 0 auto;
+}
+
+.inquiry-title h2{
+    font-size: 64px;
+    color: #191919;
+}
+
+.inquiry-body{
+    padding-right: 70px;
+    color: #191919;
+    width: 794px;
+    flex: 0 0 auto;
+}
+
+.inquiry-body h3{
+    margin-top: 0;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.inquiry-body p{
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 27px;
+}
+
+.inquiry-btn{}
+
+.inquiry-btn-simbol{}
+
+/*------------------------------------------------------footerに対する指定----------------------------------------------------------------------------------*/
+/*---footerの一番上の矢印ゾーン---*/
+.footer {
+    border-top: 1px solid #D9D9D9;
+    background-color: #fff;
+    position: relative;
+}
+
+.footer-pagetop {
+    position: relative;
+    height: 64px;
+    margin-bottom: 1px;/*何で入れている？*/
+}
+
+.footer-pagetop a {
+    border-top: 1px solid #191919;
+    position: absolute;
+    top: -1px;
+    right: 0;/*これで右寄せになる */
+    display: flex;/*flexにした理由は？*/
+    justify-content: center;
+    align-items: center;
+    width: 256px;
+    height: 63px;
+}
+
+.footer-pagetop svg {
+    width: 22px;
+    fill: #191919;/*図形やテキストを塗りつぶす*/
+}
+/*---footerの黒いゾーン---*/
+.footer-content {
+    background: #333;
+    color: #fff;
+    padding: 164px 0 193px;
+}
+
+.footer-content a {
+    color: #fff;
+}
+
+.footer-container {
+    padding: 0 64px;
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1440px;   これらは何のために入っている？*/
+}
+
+.footer-wrap {
+    display: grid;
+    grid-template-areas: "company nav" "report bnr";
+    grid-template-columns: 450px 1fr;/*gridの１列目の幅を450pxに固定し残りの空間にはもう１列作成できる*/
+    gap: 60px 0;
+}
+
+.footer-nav {
+    grid-area: nav;
+    margin-top: 62px;
+}
+
+.footer-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 64px;
+}
+
+.footer-nav__list li {
+    width: auto;
+}
+
+.footer-nav__list span {
+    color: #fff;
+}
+
+.footer-nav-link {
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.footer-nav-link i {
+    margin-left: 12px;
+    font-size: 0;
+}
+
+.footer-nav-link i svg {
+    width: 10px;
+    height: auto;
+    stroke: #fff;
+}
+
+.footer-nav__listLv2 li {
+    margin-top: 10px;
+}
+
+.footer-nav__listLv2 a {
+    font-size: 12px;
+    line-height: 13.5px;
+}
+
+.footer-company {
+    grid-area: company;
+}
+
+._name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38.4px;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ 明朝", serif;
+}
+
+._en {
+    margin-top: 26px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ 明朝", serif;
+}
+
+._info {
+    margin-top: 31px;
+    font-size: 15px;
+    line-height: 27px;
+}
+
+.footer-report {
+    grid-area: report;
+    border-bottom: 1px solid #D9D9D9
+}
+
+.footer-report a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    padding-bottom: 35px;
+}
+
+.footer-report a i {
+    width: 14px;
+    height: 11px;
+    fill: #fff;
+    font-size: 0;/*これは何で入っている？*/
+    margin-right: 8px;
+}
+
+.footer-bnr {
+    grid-area: bnr;
+    display: flex;
+    width: 446px;
+    gap: 26px;
+    margin-left: auto;
+}
+
+.footer-bnr img {
+    width: 210px;
+    height: 67px;
+}
+/*---footerの一番下の部分---*/
+
+.footer-bottom__wrap {
+    padding: 44px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 86px;
+}
+
+.footer-link {
+    margin-left: auto;
+}
+
+.footer-link ul {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-link a {
+    font-size: 12px;
+    color: #191919;
 }
 
 /*------------------------------------------------------サイドバーに対する指定----------------------------------------------------------------------------------*/
