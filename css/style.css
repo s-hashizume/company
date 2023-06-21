@@ -205,16 +205,42 @@ svg {
     overflow: hidden;
 }
 
-.swiper {
-
+.top-contents-wrap-image{
+    width: 736px;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
 }
 
-.swiper-wrapper {
-    z-index: -1;
+.top-images{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
-.swiper-slide {
+.top-images-container{
+    transform: translate3d(0px, 0, 0);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
 
+.top-images-wrapper{
+    width: 736px;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+}
+
+.top-images-pic{
+    display: block;
 }
 
 
@@ -272,6 +298,8 @@ svg {
      width: 624.5px;
      background-color: #C70D2E;
      padding: 14px 10px 8px;
+     position: relative;
+     z-index: 2;
 }
 
 .row2{
@@ -318,12 +346,83 @@ svg {
     position: relative;
 }
 
+.media-ctrl-button-left {
+    width: 33px;
+    height: 33px;
+    border: 1px solid #C80D2F;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.media-ctrl-icon {
+    width: 8px;
+    height: auto;
+    position: relative;
+    fill: #C80D2F;
+}
+
+.media-ctrl-button-right {
+    margin-left: 20px;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #C80D2F;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.media-ctrl::after {
+    content: "";
+    width: 1px;
+    height: 38px;
+    background: #D9D9D9;
+    position: absolute;
+    top: -1.5px;
+    right: -32px;
+    display: block;
+}
+
 .media-slide{
     grid-area: slide;
     position: relative;
     width: 320px;
     margin-top: 38px;
     z-index: 0;
+}
+
+.swiper {
+    z-index: 1;
+    overflow: initial;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 0ms;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    width: 320px;
+    height: 332px;
+    margin-right: 32px;
+    position: relative;
+    transition-property: transform;
+    flex-shrink: 0;
+}
+
+.c-card-blog {
+    height: 100%;
 }
 
 .p-top-blog__more{
@@ -345,6 +444,120 @@ svg {
     grid-area: slide;
     width: 320px;
     margin-top: 38px;
+}
+
+.c-card-blog__link {
+    height: 100%;
+    padding-bottom: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.c-card-blog__pic {
+    margin-bottom: 0;
+}
+
+.c-card-blog__pic img {
+    width: 320px;
+}
+
+.c-card-blog__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.c-card-blog__cate {
+    display: flex;
+}
+
+.c-card-blog__cate span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C80D2F;
+    color: #C80D2F;
+    height: 23px;
+    padding: 2px 13px;
+    border-radius: 100px;
+    font-size: 12px;
+}
+
+.c-card-blog__date {
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "Inter", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
+    letter-spacing: -0.15px;
+    color: #A6A6A8;
+}
+
+.c-card-blog__title {
+    font-family: "Inter", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    margin-top: 12px;
+    color: #191919;
+}
+
+.c-card-blog__tag {
+    color: #A6A6A8;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.c-card-blog__link::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #C80D2F;
+    position: absolute;
+    right: 0;
+    left: auto;
+    width: 0;
+    transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    bottom: -1px;
+}
+
+.swiper-slide-next {
+    width: 320px;
+    margin-right: 32px;
+    height: auto;
+    flex-shrink: 0;
+    position: relative;
+    transition-property: transform;
+}
+
+.p-top-blog__more {
+    margin-top: 20px;
+    grid-area: more;
+    align-self: center;
+    text-align: right;
+}
+
+.c-btn-angle {
+    padding: 20px 20px 20px 0;
+    display: inline-flex;
+    align-items: center;
+    border-bottom: #C80D2F 1px solid;
+    position: relative;
+}
+
+.c-btn-angle__ico {
+    margin-right: 16px;
+}
+
+.c-btn-angle__ico svg {
+    width: 12px;
+    height: auto;
+    fill: #C80D2F;
+}
+
+.c-btn-angle__txt {
+    color: #C80D2F;
 }
 
 /*------------------------------------------storyに対する指定----------------------------------*/
@@ -490,6 +703,199 @@ svg {
 }
 
 /*------------------------------------------featureに対する指定----------------------------------*/
+
+
+.feature {
+    padding: 115px 0 124px;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-container {
+    padding: 0 64px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.feature__wrap {
+    display: flex;
+    padding: 0 64px;
+}
+
+.feature__head {
+    flex: 1;/*---?---*/
+}
+
+.feature__head h2 {
+    font-size: 32px;
+    font-family: minion-pro, serif;
+    line-height: 32px;
+}
+
+.feature__ctrl {
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 32px;
+    padding-right: 32px;
+}
+
+.c-btn-circle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #C80D2F;
+}
+
+.feature__ctrl::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 38px;
+    background: #D9D9D9;
+    position: absolute;
+    right: 0;
+    top: -1.5px;
+}
+
+.c-btn-circle-right {
+    margin-left: 20px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #C80D2F;
+}
+
+.c-btn-circle__ico {
+    width: 8px;
+    position: relative;
+    font-size: 0;
+    height: auto;
+    fill: #C80D2F;
+}
+
+.feature__count {
+    align-self: center;
+    font-family: "Inter", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #C80D2F;
+}
+
+.feature__slide {
+    margin-top: 30px;
+}
+
+.feature-swiper {
+    width: 864px;
+    overflow: initial;
+    margin-right: auto;
+    margin-left: 0;
+    position: relative;
+    list-style: none;
+    z-index: 1;
+}
+
+.feature-swiper-wrapper {
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 0ms;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.feature-swiper-slide-active {
+    width: 864px;
+    margin-right: 32px;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+.c-card-feature-case {
+    background: #ebe7e1;
+}
+
+.c-card-feature-case__link {
+    display: flex;
+    flex-direction: column;
+    padding: 86px 62px 32px;
+
+}
+
+.c-card-feature-case__pic {
+    max-width: 544px;
+    align-self: center;
+    position: relative;
+}
+
+.c-card-feature-case__pic img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.c-card-feature-case__meta {
+    position: relative;
+    display: flex;
+    margin-top: 48px;
+    gap: 88.96px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #191919;
+}
+
+
+.c-card-feature-case__meta dt {
+    font-size: 12px;
+    font-family: "Inter", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
+}
+
+.feature-swiper-slide-next {
+    width: 864px;
+    margin-right: 32px;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+
+.feature-swiper-slide-author{
+    width: 864px;
+    margin-right: 32px;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: tranceform;
+}
+
+.feature-slide__indicator{
+    margin-top: 50px;
+    width: 448px;
+    height: 3px;
+    background: #D9D9D9;
+    margin-left: auto;
+}
+
+
+
 
 /*------------------------------------------serviceに対する指定----------------------------------*/
 

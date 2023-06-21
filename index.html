@@ -198,10 +198,10 @@
                         <h1 class="text">株式会社エッジ・インターナショナル</h1>
                     </div>
                     <div class="top-contents-wrap-image">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <picture>
+                        <div class="top-images">
+                            <div class="top-images-container">
+                                <div class="top-images-wrapper">
+                                    <picture class="top-images-pic">
                                         <source
                                             srcset="https://www.edge-intl.co.jp/wp-content/themes/edge-intl/assets/img/top/mv-sp.webp"
                                             media="(max-width: 1023px)" />
@@ -247,6 +247,20 @@
             </div>
         </section>
 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
         <section class="media">
             <div class="media-container">
                 <div class="media-top-blog__wrap">
@@ -260,7 +274,7 @@
                             </svg>
                         </button>
                         <button class="media-ctrl-button-right" id="topBlogNext">
-                            <svg class="c-btn-circle__ico" width="14" height="11">
+                            <svg class="media-ctrl-icon" width="14" height="11">
                                 <use href="#ico-angle-right"></use>
                             </svg>
                         </button>
@@ -281,19 +295,18 @@
                                                 </div>
                                                 <p class="c-card-blog__date">2023.03.20</p>
                                             </div>
-                                            <h3 class="c-card-blog__title">A great place to use and grow my skills and
+                                            <h3 class="c-card-blog__title">Creating sustainable value through clear communication
                                                 experience</h3>
                                             <p class="c-card-blog__tag">#
                                                 インタビュー </p>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide-next">
                                     <div class="c-card-blog">
                                         <a class="c-card-blog__link" href="https://www.edge-intl.co.jp/interview04/">
                                             <figure class="c-card-blog__pic">
-                                                <img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/EDGE_blog_11_1440x900-640x400.jpg"
-                                                    alt="" />
+                                                <img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/EDGE_blog_11_1440x900-640x400.jpg" alt="">
                                             </figure>
                                             <div class="c-card-blog__meta">
                                                 <div class="c-card-blog__cate">
@@ -303,7 +316,8 @@
                                             </div>
                                             <h3 class="c-card-blog__title">風通しの良い社風が根底にある</h3>
                                             <p class="c-card-blog__tag">#
-                                                インタビュー </p>
+                                                インタビュー 
+                                            </p>
                                         </a>
                                     </div>
                                 </div>
@@ -515,6 +529,27 @@
             </div>
         </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <section class="story">
             <div class="story-wrap">
                 <div class="story-container">
@@ -565,7 +600,161 @@
             </div>
         </section>
 
-        <section class="feature"></section>
+        <section class="feature">
+            <div class="feature-container">
+                <div class="feature__wrap">
+                    <div class="feature__head">
+                        <h2 class="c-heading-en">Feature Case Study</h2>
+                    </div>
+                    <div class="feature__ctrl">
+                        <button class="c-btn-circle c-btn-circle--s" id="topFeaturePrev">
+                            <svg class="c-btn-circle__ico" width="14" height="11">
+                                <use href="#ico-angle-left"></use>
+                            </svg>
+                        </button>
+                        <button class="c-btn-circle-right c-btn-circle--s" id="topFeatureNext">
+                            <svg class="c-btn-circle__ico" width="14" height="11">
+                                <use href="#ico-angle-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="feature__count">
+                        <span id="current">0</span>
+                        <span>/</span>
+                        <span id="total">0</span>
+                    </div>
+                </div>
+                <div class="feature__slide">
+                    <div class="feature-swiper">
+                        <div class="feature-swiper-wrapper">
+                            <div class="feature-swiper-slide-active">
+                                <div class="c-card-feature-case" style="background: #ebe7e1;">
+                                    <a class="c-card-feature-case__link" href="https://www.edge-intl.co.jp/itochu-report-2022/">
+                                        <figure class="c-card-feature-case__pic">
+                                            <img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/report_07_00.png" alt=""/>
+                                            <!--<img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/report_07_00.png" alt=""/>-->
+                                        </figure>
+                                        <div class="c-card-feature-case__meta">
+                                            <dl>
+                                                <dt>Client</dt>
+                                                <dd>伊藤忠商事株式会社</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Project</dt>
+                                                <dd>統合報告書2022</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="feature-swiper-slide-next">
+                                <div class="c-card-feature-case" style="background: #dae3de;">
+                                    <a class="c-card-feature-case__link" href="https://www.edge-intl.co.jp/ushio-report-2022/">
+                                        <figure class="c-card-feature-case__pic">
+                                            <img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/report_03_00-800x560.png" alt=""/>
+                                            <!--<img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/report_03_00-800x560.png" alt=""/>-->
+                                        </figure>
+                                        <div class="c-card-feature-case__meta">
+                                            <dl>
+                                                <dt>Client</dt>
+                                                <dd>ウシオ電機株式会社</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Project</dt>
+                                                <dd>Ushio Report 2022</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="feature-swiper-slide-author">
+                                <div class="c-card-feature-case" style="background: #eee3e8;">
+                                    <a class="c-card-feature-case__link" href="https://www.edge-intl.co.jp/unicharm-report-2022/">
+                                        <figure class="c-card-feature-case__pic">
+                                            <img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/report_05_00-800x560.png" alt=""/>
+                                            <!--<img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/report_05_00-800x560.png" alt=""/>-->
+                                        </figure>
+                                        <div class="c-card-feature-case__meta">
+                                            <dl>
+                                                <dt>Client</dt>
+                                                <dd>ユニ・チャーム株式会社</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Project</dt>
+                                                <dd>統合報告書2022</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="feature-swiper-slide-author">
+                                <div class="c-card-feature-case" style="background: #C1D3E0;">
+                                    <a class="c-card-feature-case__link" href="https://www.edge-intl.co.jp/nyk-2022/">
+                                        <figure class="c-card-feature-case__pic">
+                                            <img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/report_01_00-1024x656_2-800x560.png" alt=""/>
+                                            <!--<img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/report_01_00-1024x656_2-800x560.png" alt=""/>-->
+                                        </figure>
+                                        <div class="c-card-feature-case__meta">
+                                            <dl>
+                                                <dt>Client</dt>
+                                                <dd>日本郵船株式会社</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Project</dt>
+                                                <dd>統合報告書2022</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="feature-swiper-slide-author">
+                                <div class="c-card-feature-case" style="background: #e4e1d6;">
+                                    <a class="c-card-feature-case__link" href="https://www.edge-intl.co.jp/royalhd-report-2022/">
+                                        <figure class="c-card-feature-case__pic">
+                                            <img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/report_06_00-800x560.png" alt=""/>
+                                            <!--<img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/report_06_00-800x560.png" alt=""/>-->
+                                        </figure>
+                                        <div class="c-card-feature-case__meta">
+                                            <dl>
+                                                <dt>Client</dt>
+                                                <dd>ロイヤルホールディングス株式会社</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Project</dt>
+                                                <dd>統合報告書2022</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="feature-swiper-slide-author">
+                                <div class="c-card-feature-case" style="background: #c6ddee;">
+                                    <a class="c-card-feature-case__link" href="https://www.edge-intl.co.jp/%e3%83%80%e3%82%a4%e3%82%ad%e3%83%b3%e5%b7%a5%e6%a5%ad%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be%e3%80%80%e7%b5%b1%e5%90%88%e5%a0%b1%e5%91%8a%e6%9b%b82022/">
+                                        <figure class="c-card-feature-case__pic">
+                                            <img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/report_04_00-800x560.png" alt=""/>
+                                            <!--<img src="https://www.edge-intl.co.jp/wp-content/uploads/2023/03/report_04_00-800x560.png" alt=""/>-->
+                                        </figure>
+                                        <div class="c-card-feature-case__meta">
+                                            <dl>
+                                                <dt>Client</dt>
+                                                <dd>ダイキン工業株式会社</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Project</dt>
+                                                <dd>統合報告書2022</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-slide__indicator">
+                    <div id="featureIndicator"></div>
+                </div>
+            </div>
+        </section>
 
         <section class="service">
             <div class="service-container">
@@ -834,7 +1023,7 @@
     </div>
 
 
-    <script src="https://www.edge-intl.co.jp/wp-content/themes/edge-intl/assets/js/app.js"></script>
+    <!-- <script src="https://www.edge-intl.co.jp/wp-content/themes/edge-intl/assets/js/app.js"></script> -->
     <svg display="none">
         <defs>
             <symbol id="ico-caret" viewBox="0 0 11 6">
