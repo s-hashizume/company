@@ -30,6 +30,7 @@ svg {
 
 .container {
     width: 100%;
+    overflow: hidden;
 }
 /*------------------------------------------ヘッダーに対する指定----------------------------------*/
 #header {
@@ -111,7 +112,7 @@ svg {
     position: absolute;
     left: 0;
     pointer-events: none;
-    display: block;
+    display: none;
 }
 
 .header-nav__listLv2 li {
@@ -619,7 +620,7 @@ svg {
     width: 640px;
     margin-left: auto;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .story-description picture {
@@ -977,6 +978,7 @@ svg {
 
 .service-items-title {
     margin-top: 16px;
+    position: relative;
 }
 
 .service-items-title p {
@@ -986,16 +988,24 @@ svg {
 }
 
 .service-items-title-btn {
+    position: absolute;
+    top: 6px;
+    right: 0;
 
 }
 
 .service-items-title-btn-icon {
-
+    width: 33px;
+    height: 33px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C80D2F;
+    border-radius: 100%;
 }
 
-.service-items-title-btn-icon svg {
 
-}
 
 /*-----------------------------------achievementsに対する指定------------------------------*/
 
@@ -1056,7 +1066,15 @@ svg {
     align-items: center;
 }
 
-.awards-athor-btn{}
+.awards-athor-btn{
+    margin-right: 16px;
+}
+
+.awards-athor-btn svg {
+    width: 12px;
+    height: 9.4px;
+    fill: #C80D2F;
+}
 
 .awards-athor-text{}
 
@@ -1086,12 +1104,13 @@ svg {
 /*-----------------------------------------------contactに対する指定--------------------------*/
 
 
-.contact{}
+.contact{
+    position: relative;
+    z-index: 1;
+}
 
-.contact-container{}
 
-.contact-wrap{}
-/*-----------------recruteに対する指定----------------*/
+/*-----------------recruieに対する指定----------------*/
 .contact-recruit{
     border-top: 1px solid #D9D9D9;
 }
@@ -1099,19 +1118,31 @@ svg {
 .recruit-link{
     height: 417px;
     display: block;
-    background-color: #fff;
+    /* background-color: #fff; */
+}
+
+.contact-recruit a:hover {
+    color: #fff !important;
 }
 
 .action-bg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 1440px;
+    height: 417px;
     object-fit: cover;
-    opacity: 0;
+    /* opacity: 0; */
     transform: scale(1.1);
     transition: 0.6s;
+}
+
+.action-bg:hover {
+    opacity: 1;
+}
+
+.action-bg img {
+    width: 100%;
 }
 
 .recruit-container{
@@ -1271,6 +1302,7 @@ svg {
     border-top: 1px solid #D9D9D9;
     background-color: #fff;
     position: relative;
+    z-index: 1;
 }
 
 .footer-pagetop {
