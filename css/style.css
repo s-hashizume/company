@@ -1243,7 +1243,17 @@ svg {
     background-color: #fff;
 }
 
-
+.inquiry-action-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 417px;
+    object-fit: cover;
+    /* opacity: 0; */
+    transform: scale(1.1);
+    transition: 0.6s;
+}
 .action-bg img{}
 
 .iquiry-container{
@@ -1518,4 +1528,135 @@ svg {
     font-size: 15px;
     line-height: 1;
     white-space: nowrap;
+}
+
+@media (max-width: 1023px) {
+    
+    #header {
+        height: 72px;
+        border-bottom: none;
+    }
+
+    .header-wrapper-title {
+        left: 9px;
+        top: 19px;
+    }
+
+    .header-wrapper-title img {
+        width: 67px;
+        height: 39px;
+    }
+
+    .header-wrapper-contact, .header-wrapper-nav {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .top-contents {
+        height: 480px;
+    }
+
+    .top-contents-wrap {
+        margin-top: 0;
+    }
+
+    .top-contents-wrap-character {
+        top: 220px;
+        left: 9px;
+        z-index: 2;
+    }
+
+    .character {
+        font-size: 44px;
+        letter-spacing: -1px;
+        line-height: 48px;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .top-contents-wrap-image {
+        top: 144px;
+        left: 116px;
+    }
+
+    .top-images-wrapper {
+        width: 259px;
+        height: 386px;
+    }
+
+    .top-images-pic {
+        height: 100%;
+    }
+
+    .top-images-pic img {
+        height: 100%;
+    }
+
+    .purpose {
+        padding: 105px 0 77px;
+    }
+
+    .p-container {
+        padding: 0 19px;
+    }
+
+    .p-c-lead {
+        display: block;
+        position: relative;
+        top: auto;
+    }
+
+    .p-c-l__head {
+        line-height: 23px;
+        font-size: 19px;
+        padding: 0;
+        width: auto;
+    }
+
+    .p-c-l__body {
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 38px;
+        position: absolute;
+    }
+
+
+
+    .row1 {
+        width: 245px;
+        padding: 0;
+        margin-left: -10px;
+        padding: 0;
+        padding-top: 5.5px;
+    }
+
+    .row2 {
+        margin-left: 60px;
+        padding: 0;
+        padding-top: 5.5px;
+        width: 280px;
+    }
+
+    .p-c-lead::before {
+        left: 0;
+        top: 40px;
+        margin-left: -20px;
+        height: 96px;
+    }
+
+    .top-contents-wrap::before {
+        top: 72px;
+        left: 0;
+        width: 100%;
+        height: 408px;
+    }
+
+    .media-top-blog__head h2 {
+        font-size: 30px;
+    }
 }
