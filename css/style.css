@@ -1963,5 +1963,185 @@ svg {
         width: 100%;
     }
 
+    .achievements {
+        position: relative;
+        padding: 57px 0;
+    }
 
+    .achievements-container {
+        padding: 0 19px;
+    }
+
+    .achievements-wrap {
+        flex-direction: column-reverse;
+    }
+
+    .awards {
+        margin-top: 57px;
+        width: 100%;
+    }
+
+    .contact {
+
+    }
+
+    .recruit-link, .inquiry-link {
+        height: 196px;
+    }
+
+    .action-bg {
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+
+    .recruit-container, .iquiry-container {
+        padding: 0 19px;
+    }
+
+    .recruit-wrap, .inquiry-wrap {
+        display: block;
+        padding: 48px 0;
+    }
+
+    .recruit-title h2, .inquiry-title h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .recruit-body, .inquiry-body {
+        padding-right: 67px;
+    }
+
+    .recruit-body h3, .inquiry-body h3 {
+        margin-top: 19px;
+        font-size: 16px;
+        line-height: 25px;
+        opacity: 0.6;
+    }
+
+    .recruit-body p, .inquiry-body p {
+        display: none;
+    }
+
+    .recruit-btn {
+        top: 90px;
+        right: 19px;
+        width: 57px;
+        height: 57px;
+    }
+
+    .recruit-btn-simbol {
+        width: 100%;
+        height: 100%;
+    }
+
+    .break {
+        display: block;
+    }
+
+    .footer-pagetop {
+        height: 82px;
+    }
+
+    .footer-pagetop a {
+        width: 67px;
+        height: 35px;
+    }
+
+    .footer-pagetop a svg {
+        height: 13px;
+    }
+
+    .footer-content {
+        padding: 96px 0 65px;
+    }
+
+    .footer-container {
+        padding: 0 19px;
+    }
+
+    .footer-company {
+        display: none;
+    }
+
+    .footer-nav {
+        display: block;
+    }
+
+    .footer-nav__link i {
+        margin-left: 11px;
+    }
+
+    .footer-nav__link svg {
+        stroke: #fff;
+        width: 9px;
+        height: auto;
+    }
+
+    .footer-wrap {
+        display: block;
+    }
+
+    .footer-nav__list {
+        gap: 29px 0;
+        justify-content: flex-start;
+    }
+
+    .footer-nav__list li {
+        width: 50%;
+        font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
+    }
+
+    .footer-nav__listLv2 li {
+        width: 100%;
+        font-weight: 100;
+        opacity: 0.8;
+    }
+
+    .footer-nav__listLv2 a {
+        font-size: 15px;
+    }
+
+    .footer-report {
+        margin-top: 47px;
+        opacity: 0.8;
+    }
+
+    .footer-bnr {
+        margin-top: 38px;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .footer-bnr img {
+        width: 163px;
+        height: 52px;
+    }
+
+    .footer-bottom__wrap {
+        padding: 19px 0;
+    }
+
+    .footer-logo {
+        width: 67px;
+        height: 39px;
+    }
+
+    .footer-logo a {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-logo img {
+        width: 100%;
+    }
+
+    .footer-link {
+        margin-left: auto;
+    }
+    .footer-link ul {
+        gap: 20px;
+        font-size: 11.5px;
+    }
 }
