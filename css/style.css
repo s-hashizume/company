@@ -20,12 +20,15 @@ body {
     font-weight: 500;/*初期値が400なので少し太め*/
     word-wrap: break-word;/*IEが独自採用したもので必要に応じて途中改行を行う*/
     line-height: 1.5;
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ 明朝", serif;;
 }
 
 svg {
     max-width: 100%;
     vertical-align: middle;
+}
+
+button {
+    font-family: Helvetica, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
 }
 
 .container {
@@ -81,6 +84,8 @@ svg {
 .header-wrapper-nav-list li {
     position: relative;
 }
+
+
 
 .header-wrapper-menu-button {
     display: inline-flex;
@@ -151,10 +156,14 @@ svg {
 
 .top-contents {
 }
-
+@media (min-width: 1024px) {
+    .top-contents {
+        height: 67.0138888889vw;
+    }
+}
 .top-contents-wrap {
     margin-top: 120px;
-    height: 965px;
+    height: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -170,26 +179,49 @@ svg {
     width: 1376px;
     z-index: -1;
 }
+
+@media screen and (min-width: 1024px){
+    .top-contents-wrap:before {
+        top: auto;
+        left: 4rem;
+        height: 613px;
+        bottom: 13.583333vw;
+    }
+}
+
 .top-contents-wrap-character {
     position: absolute;
     top: 140px;
     left: 128px;
-
-    
 }
 
 .character {
-    font-size: 115px;
+    font-size: 100px;
     line-height: 103px;
     display: flex;
     flex-direction: column;
     letter-spacing: -8px;
     align-items: flex-start;
-    font-family: minion-Pro, serif;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
 }
 
 .character span {
     padding: 4.6px 0;
+}
+
+@media screen and (min-width: 1024px){
+
+    .top-contents-wrap-character {
+        left: 8.8888888889vw;
+        top: 9.7222222222vw;
+    }
+
+    .character {
+        font-size: 125px;
+        letter-spacing: -5px;
+        line-height: 138px;
+    }
 }
 
 .text {
@@ -199,22 +231,18 @@ svg {
     letter-spacing: 0.18px;
     padding: 29px 0;
     font-weight: 500;
-
 }
 
-.top-contents-wrap-image {
-    width: 100%;
+
+.top-contents-wrap-image{
     position: absolute;
     top: 0;
     left: 49%;
     overflow: hidden;
-}
-
-.top-contents-wrap-image{
-    width: 736px;
+    width: 51.1111111111vw;
+    height: auto;
     overflow: hidden;
     z-index: 1;
-    position: absolute;
 }
 
 .top-images{
@@ -236,16 +264,18 @@ svg {
 }
 
 .top-images-wrapper{
-    width: 736px;
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
     flex-shrink: 0;
-    height: 100%;
     position: relative;
 }
 
 .top-images-pic{
     display: block;
+}
+
+.top-images-pic img {
+    object-fit: cover;
 }
 
 
@@ -288,12 +318,14 @@ svg {
 }
 
 .p-c-l__head h2 {
-    font-size: 20px;
-    font-family: serif;
+    font-size: 17px;
+    font-family: 'Libre Baskerville', serif;
     font-weight: 400;
+    opacity: 0.8;
 }
 
 .p-c-l__body{
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ 明朝", serif;
     color: #fff;
     font-size: 50px;
     width: 1078px;
@@ -318,10 +350,13 @@ svg {
 
 .media {
     padding-top: 50px;
-    overflow: hidden;/*--なんでここに入れた？--*/
+     /*overflow: hidden;--なんでここに入れた？--*/
 }
 
 .media-container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 0 128px;
 }
 
@@ -336,9 +371,10 @@ svg {
 }
 
 .media-top-blog__head h2 {
-    font-size: 64px;
+    font-size: 50px;
     line-height: 64px;
-    font-family: minion-pro, serif;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 500;
 }
 
 .media-ctrl{
@@ -450,7 +486,7 @@ svg {
 
 .media-title {
     font-size: 64px;
-    font-family: serif;
+    font-family: 'Libre Baskerville', serif;
     line-height: 1;
 }
 
@@ -501,6 +537,12 @@ svg {
     font-size: 12px;
 }
 
+@media (min-width: 1024px) {
+    .c-card-blog__cate span {
+        height: 17px;
+    }
+}
+
 .c-card-blog__date {
     font-size: 15px;
     line-height: 18px;
@@ -544,6 +586,10 @@ svg {
     flex-shrink: 0;
     position: relative;
     transition-property: transform;
+}
+
+.swiper-slide-next a {
+    padding-bottom: 10px;
 }
 
 .p-top-blog__more {
@@ -619,9 +665,9 @@ svg {
 }
 
 .story-background-top {
-    font-size: 200px;
+    font-size: 165px;
     color: rgb(255, 255, 255);
-    font-family: serif;
+    font-family: 'Libre Baskerville', serif;
     opacity: 0.6;
     position: absolute;
     line-height: 200px;
@@ -726,9 +772,9 @@ svg {
 }
 
 .story-background-bottom {
-    font-size: 200px;
+    font-size: 165px;
     color: rgb(255, 255, 255);
-    font-family: serif;
+    font-family: 'Libre Baskerville', serif;
     opacity: 0.6;
     position: absolute;
     line-height: 200px;
@@ -769,6 +815,7 @@ svg {
     font-size: 32px;
     font-family: minion-pro, serif;
     line-height: 32px;
+    font-weight: 500;
 }
 
 .feature__ctrl {
@@ -874,8 +921,8 @@ svg {
     transition-property: transform;
 }
 
-.c-card-feature-case {
-    background: #ebe7e1;
+.c-card-feature-case:hover {
+    transform: scale(1.1);
 }
 
 .c-card-feature-case__link {
@@ -896,6 +943,7 @@ svg {
     z-index: 2;
     max-width: 100%;
     vertical-align: middle;
+    transition: transform 0.3s ease;
 }
 
 .c-card-feature-case__meta {
@@ -921,6 +969,7 @@ svg {
     height: 100%;
     position: relative;
     transition-property: transform;
+    background-color: #ebe7e1;
 }
 
 
@@ -974,8 +1023,8 @@ svg {
 }
 
 .service-head h2 {
-    font-size: 64px;
-    font-family: serif;
+    font-size: 50px;
+    font-family: 'Libre Baskerville', serif;
     font-weight: 200;
 }
 
@@ -1028,6 +1077,7 @@ svg {
 }
 
 .service-items-title p {
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ 明朝", serif;
     font-size: 24px;
     font-weight: 200;
     opacity: 0.8;
@@ -1101,6 +1151,8 @@ svg {
 
 .awards-title h2{
     font-size: 32px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 200;
 }
 
 .awards-li{
@@ -1139,6 +1191,8 @@ svg {
 
 .client-title h2{
     font-size: 32px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 200;
 }
 
 .client-text{
@@ -1215,15 +1269,15 @@ svg {
 }
 
 .recruit-title{
-    font-family: minion-pro, serif;
-    font-weight: 500;
     width: 384px;
     flex: 0 0 auto;
 }
 
 .recruit-title h2{
-    font-size: 64px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
     color: #191919;
+    font-weight: 400;
 }
 
 .recruit-body{
@@ -1236,6 +1290,8 @@ svg {
     margin-top: 0;
     font-size: 32px;
     line-height: 48px;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ 明朝", serif;
+    font-weight: 400;
 }
 
 .recruit-body p {
@@ -1326,15 +1382,15 @@ svg {
 }
 
 .inquiry-title{
-    font-family: minion-pro, serif;
-    font-weight: 500;
     width: 384px;
     flex: 0 0 auto;
 }
 
 .inquiry-title h2{
-    font-size: 64px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
     color: #191919;
+    font-weight: 400;
 }
 
 .inquiry-body{
@@ -1348,6 +1404,8 @@ svg {
     margin-top: 0;
     font-size: 32px;
     line-height: 48px;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ 明朝", serif;
+    font-weight: 400;
 }
 
 .inquiry-body p{
@@ -1578,9 +1636,9 @@ svg {
 .aside-c-text p {
     transform: rotate(90deg);
     display: inline-flex;
-    font-family: serif;
+    font-family: 'Libre Baskerville', serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1;
     white-space: nowrap;
 }
