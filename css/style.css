@@ -902,9 +902,10 @@ button {
 .feature__count {
     align-self: center;
     font-family: "Inter", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 15px;
     color: #C80D2F;
+    letter-spacing: -2.5px;
 }
 
 .feature__slide {
@@ -942,8 +943,8 @@ button {
     transition-property: transform;
 }
 
-.c-card-feature-case:hover {
-    transform: scale(1.1);
+.c-card-feature-case:hover .c-card-feature-case__pic img {
+    transform: scale(1.07);
 }
 
 .c-card-feature-case__link {
@@ -964,7 +965,7 @@ button {
     z-index: 2;
     max-width: 100%;
     vertical-align: middle;
-    transition: transform 0.3s ease;
+    transition: transform 1.0s;
 }
 
 .c-card-feature-case__meta {
@@ -1084,12 +1085,30 @@ button {
 .service-items-link {
     color: #191919;
 }
-.service-items-link-figure {
 
+.service-items-link:hover .service-items-link-figure img {
+    transform: scale(1.07);
+}
+
+.service-items-link:hover .service-items-title p {
+    color: #C80D2F;
+}
+
+.service-items-link:hover .service-items-title-btn-icon {
+   background-color: #C80D2F;
+}
+
+.service-items-link:hover .c-btn-circle__ico {
+    fill: #fff;
+}
+
+.service-items-link-figure {
+    overflow: hidden;
 }
 
 .service-items-link-figure img {
     max-width: 395px;
+    transition: transform 1.0s;
 }
 
 .service-items-title {
@@ -1102,6 +1121,7 @@ button {
     font-size: 24px;
     font-weight: 200;
     opacity: 0.8;
+    transition: color 1.0s;
 }
 
 .service-items-title-btn {
@@ -1155,6 +1175,7 @@ button {
     padding: 0 128px;
     width: 100%;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .achievements-wrap{
@@ -1171,7 +1192,7 @@ button {
 }
 
 .awards-title h2{
-    font-size: 32px;
+    font-size: 1.65rem;
     font-family: 'Libre Baskerville', serif;
     font-weight: 200;
 }
@@ -1211,7 +1232,7 @@ button {
 .client-title{}
 
 .client-title h2{
-    font-size: 32px;
+    font-size: 1.65rem;
     font-family: 'Libre Baskerville', serif;
     font-weight: 200;
 }
@@ -1467,10 +1488,21 @@ button {
     height: 63px;
 }
 
+.footer-pagetop a:hover  {
+    background-color: #C80D2F;
+    transition: 0.5s;
+}
+
+.footer-pagetop a:hover .footer-allow {
+    fill: #fff;
+}
+
 .footer-pagetop svg {
     width: 22px;
     fill: #191919;/*図形やテキストを塗りつぶす*/
+    height: auto;
 }
+
 /*---footerの黒いゾーン---*/
 .footer-content {
     background: #333;
@@ -1484,10 +1516,9 @@ button {
 
 .footer-container {
     padding: 0 64px;
-    /* margin-left: auto;
-    margin-right: auto;
     width: 100%;
-    max-width: 1440px;   これらは何のために入っている？*/
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .footer-wrap {
@@ -1495,6 +1526,7 @@ button {
     grid-template-areas: "company nav" "report bnr";
     grid-template-columns: 450px 1fr;/*gridの１列目の幅を450pxに固定し残りの空間にはもう１列作成できる*/
     gap: 60px 0;
+    position: relative;
 }
 
 .footer-nav {
@@ -1513,8 +1545,17 @@ button {
     width: auto;
 }
 
-.footer-nav__list span {
+.footer-nav__link i {
+    margin-left: 0.75rem;
+}
+
+.footer-nav__link svg {
+    stroke: #fff;
+}
+
+.footer-nav__link span {
     color: #fff;
+    font-weight: 400;
 }
 
 .footer-nav-link {
@@ -1575,6 +1616,17 @@ button {
     border-bottom: 1px solid #D9D9D9
 }
 
+.footer-report::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background: #C80D2F;
+    transition: width 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 .footer-report a {
     display: flex;
     align-items: center;
@@ -1582,6 +1634,20 @@ button {
     color: #fff;
     padding-bottom: 35px;
 }
+
+.footer-report:hover .footer-request {
+    color: #C80D2F;
+}
+
+.footer-report:hover .footer-report-allow {
+    fill: #C80D2F;
+}
+
+
+.footer-report:hover::after {
+    width: 36%;
+}
+
 
 .footer-report a i {
     width: 14px;
