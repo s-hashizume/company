@@ -136,18 +136,27 @@ button {
     position: absolute;
     top: 0;
     right: 0;
+    display: inline-block;
+    background-color: #C80D2F;
+    background-image: linear-gradient(to right, #333 50%, #C80D2F 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.3s ease-out;
 }
 
 .header-wrapper-contact a {
     display: flex;
     width: 224px;
-    height: 120px;
-    background: #C80D2F;
+    height: 168px;
     color: #fff;
     align-items: center;
     justify-content: center;
     font-size: 15px;
     font-weight: 500;
+}
+
+.header-wrapper-contact:hover {
+    background-position: left bottom;
 }
 /*------------------------------------------トップに対する指定----------------------------------*/
 .top {
@@ -185,7 +194,7 @@ button {
         top: auto;
         left: 4rem;
         height: 613px;
-        bottom: 13.583333vw;
+        bottom: 21.5vw;
     }
 }
 
@@ -196,11 +205,11 @@ button {
 }
 
 .character {
-    font-size: 100px;
-    line-height: 103px;
+    font-size: 6.98vw;
+    line-height: 1.1;
     display: flex;
     flex-direction: column;
-    letter-spacing: -8px;
+    letter-spacing: -0.07em;
     align-items: flex-start;
     font-family: 'Libre Baskerville', serif;
     font-weight: 400;
@@ -215,12 +224,6 @@ button {
     .top-contents-wrap-character {
         left: 8.8888888889vw;
         top: 9.7222222222vw;
-    }
-
-    .character {
-        font-size: 125px;
-        letter-spacing: -5px;
-        line-height: 138px;
     }
 }
 
@@ -281,7 +284,7 @@ button {
 
 .purpose {
     width: 100%;
-    height: 300px;
+    height: auto;
 }
 
 .p-container{
@@ -302,7 +305,7 @@ button {
 
 .p-c-lead::before {
     content: "";
-    background: #F0F4F8;
+    background: #F8F9FB;
     position: absolute;
     top: 0;
     left: 290px;
@@ -336,7 +339,7 @@ button {
      background-color: #C70D2E;
      padding: 14px 10px 8px;
      position: relative;
-     z-index: 2;
+     z-index: 1;
 }
 
 .row2{
@@ -349,7 +352,7 @@ button {
 /*------------------------------------------mediaに対する指定----------------------------------*/
 
 .media {
-    padding-top: 50px;
+    padding-top: 8.5rem;
      /*overflow: hidden;--なんでここに入れた？--*/
 }
 
@@ -463,7 +466,7 @@ button {
     box-sizing: content-box;
 }
 
-.swiper-slide {
+.swiper-slide, .swiper-slide-next {
     width: 320px;
     height: 332px;
     margin-right: 32px;
@@ -501,9 +504,26 @@ button {
     height: 100%;
     padding-bottom: 16px;
     position: relative;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     border-bottom: 1px solid #D9D9D9;
+}
+
+.c-card-blog__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #C80D2F;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.swiper-slide:hover .c-card-blog__link::after {
+    transform: scaleX(1);
 }
 
 .c-card-blog__pic {
@@ -557,6 +577,19 @@ button {
     line-height: 21px;
     margin-top: 12px;
     color: #191919;
+    transition: color 0.3s;
+}
+
+.swiper-slide:hover .c-card-blog__title {
+    color: #C80D2F;
+}
+
+.swiper-slide:hover .c-card-blog__link {
+
+}
+
+.swiper-slide-next:hover .c-card-blog__title {
+    color: #C80D2F;
 }
 
 .c-card-blog__tag {
@@ -566,37 +599,25 @@ button {
     line-height: 18px;
 }
 
-.c-card-blog__link::after {
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: #C80D2F;
-    position: absolute;
-    right: 0;
-    left: auto;
-    width: 0;
-    transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-    bottom: -1px;
-}
 
-.swiper-slide-next {
+
+/* .swiper-slide-next {
     width: 320px;
     margin-right: 32px;
     height: auto;
     flex-shrink: 0;
     position: relative;
     transition-property: transform;
-}
+} */
 
-.swiper-slide-next a {
-    padding-bottom: 10px;
-}
+
 
 .p-top-blog__more {
     margin-top: 20px;
     grid-area: more;
     align-self: center;
     text-align: right;
+    margin-left: 30px;
 }
 
 .c-btn-angle {
