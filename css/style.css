@@ -1368,6 +1368,12 @@ button {
     transform: scale(1.0);
 }
 
+.recruit-link:hover .action-bg,
+.inquiry-link:hover .action-bg {
+    opacity: 1;
+    transform: scale(1.0);
+}
+
 
 .action-bg img {
     width: 100%;
