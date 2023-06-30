@@ -96,6 +96,33 @@ button {
     cursor: pointer;
 }
 
+.header-wrapper-menu-button:hover .menu-allow {
+    stroke: #C80D2F;
+}
+
+.header-wrapper-menu-button:hover .menu-category {
+    color: #C80D2F;
+}
+
+.enterprise:hover .header-nav__listLv2,
+.characteristic:hover .header-nav__listLv2,
+.menu-service:hover .header-nav__listLv2 {
+    display: block;
+}
+
+.header-nav__listLv2:hover {
+    display: block;
+}
+
+
+.header-wrapper-nav-list-link {
+    color: #191919;
+}
+
+.header-wrapper-nav-list-link:hover {
+    color: #C80D2F;
+}
+
 .header-wrapper-menu-button i {
     font-size: 0;/*これは何？*/
     margin-left: 8px;
@@ -108,27 +135,55 @@ button {
 
 }
 
-.header-wrapper-nav span:hover, .header-wrapper-nav-list-link:hover {
-    color: #C70D2E;
-}
 
-.header-wrapper-nav-list-link {
+
+.hidden-character {
     color: #191919;
 }
 
 .header-nav__listLv2 {
-    margin-top: 24px;
     position: absolute;
     left: 0;
-    pointer-events: none;
     display: none;
+    background-color: #F0F4F8;
+    color: #191919;
 }
 
 .header-nav__listLv2 li {
     width: 220px;
     border-bottom: 1px solid #F0F4F8;
-    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);/*表示領域を制限することができる*/
-    transition: clip-path 0.3s cubic-bezier(0.23, 1, 0.32, 1)
+}
+
+.header-nav__listLv2 li:hover {
+    background: #C80D2F;
+}
+
+.header-nav__listLv2 li:hover .hidden-character {
+    color: #fff;
+}
+
+.header-nav__listLv2 li:hover .hidden-allow {
+    stroke: #fff;
+}
+
+.header-nav__listLv2 span {
+    color: #191919;
+}
+
+.header-nav__listLv2 i {
+    margin-right: 12px;
+}
+
+.header-nav__listLv2 svg {
+    width: 14px;
+    height: 11px;
+}
+
+.header-nav__listLv2 a {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    line-height: 1.125;
 }
 
 .header-wrapper-contact {
