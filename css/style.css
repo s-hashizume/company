@@ -683,6 +683,25 @@ button {
     position: relative;
 }
 
+.p-top-blog__more:hover {
+    background-color: #C80D2F;
+    transition: 0.5s;
+}
+
+.p-top-blog__more:hover .c-btn-angle__txt {
+    color: #fff;
+}
+
+.p-top-blog__more:hover .c-btn-angle__ico svg {
+    fill: #fff;
+}
+
+.p-top-blog__more:hover .c-btn-angle__ico {
+    margin-right: 3px;
+    margin-left: 13px;
+    transition: 0.3s;
+}
+
 .c-btn-angle__ico {
     margin-right: 16px;
 }
@@ -828,10 +847,7 @@ button {
     transition: background-color 0.3s;
 }
 
-.story-more-link:hover {
-    color: #fff;
-    background-color: #C70D2E;
-}
+
 
 .story-more-icon {
     margin-right: 16px;
@@ -839,13 +855,12 @@ button {
 
 .story-more-icon svg {
     width: 20px;
+    height: auto;
     fill: #C80D2F;
     vertical-align: middle;
 }
 
-.story-more-icon svg:hover {
-    fill: #fff;
-}
+
 
 .story-background-bottom {
     font-size: 165px;
@@ -860,6 +875,23 @@ button {
 
 .story-more-sm {
     display: none;
+}
+
+.story-more:hover {
+    background-color: #C80D2F;
+    transition: 0.3s;
+}
+
+.story-more:hover .story-more-icon svg,
+.story-more:hover .story-more-link span {
+    fill: #fff;
+    color: #fff;
+}
+
+.story-more:hover .story-more-icon {
+    margin-right: 3px;
+    margin-left: 13px;
+    transition: 0.5s;
 }
 
 /*------------------------------------------featureに対する指定----------------------------------*/
@@ -917,6 +949,12 @@ button {
 
 .c-btn-circle:hover, .c-btn-circle-right:hover {
     background-color: #C70D2E;
+    transition: 0.5s;
+}
+
+.c-btn-circle:hover .c-btn-circle__ico,
+.c-btn-circle-right:hover .c-btn-circle__ico {
+    fill: #fff;
 }
 
 .feature__ctrl::after {
@@ -950,9 +988,7 @@ button {
     fill: #C80D2F;
 }
 
-.c-btn-circle__ico:hover {
-    fill: #fff;
-}
+
 
 .feature__count {
     align-self: center;
@@ -1282,6 +1318,23 @@ button {
 
 .awards-athor-text{}
 
+
+.awards-athor:hover {
+    background-color: #C80D2F;
+    transition: 0.5s;
+}
+
+.awards-athor:hover .awards-athor-text,
+.awards-athor:hover .awards-athor-btn svg {
+    color: #fff;
+    fill: #fff;
+}
+
+.awards-athor:hover .awards-athor-btn {
+    margin-right: 3px;
+    margin-left: 13px;
+    transition: 0.3s;
+}
 .client{}
 
 .client-title{}
