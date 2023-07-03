@@ -1428,7 +1428,7 @@ button {
 } 
 
 .recruit-link:hover .c-btn-circle_ico,
-.inquiry-link .c-btn-circle_ico {
+.inquiry-link:hover .c-btn-circle_ico {
     stroke: #fff;
 } 
 
