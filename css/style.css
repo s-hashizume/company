@@ -1931,7 +1931,7 @@ button {
     }
 
     .top-contents {
-        height: 480px;
+        height: 590px;
     }
 
     .top-contents-wrap {
@@ -1945,7 +1945,7 @@ button {
     }
 
     .character {
-        font-size: 44px;
+        font-size: 38px;
         letter-spacing: -1px;
         line-height: 48px;
     }
@@ -1957,6 +1957,7 @@ button {
     .top-contents-wrap-image {
         top: 144px;
         left: 116px;
+        width: 258.641px;
     }
 
     .top-images-wrapper {
@@ -1973,7 +1974,7 @@ button {
     }
 
     .purpose {
-        padding: 105px 0 77px;
+        padding: 0 0 77px;
     }
 
     .p-container {
@@ -2081,6 +2082,7 @@ button {
     }
 
     .swiper-slide-next {
+        height: auto;
     }
 
     .c-card-blog__meta {
