@@ -290,6 +290,7 @@ button {
     position: absolute;
     top: 140px;
     left: 128px;
+    z-index: 2;
 }
 
 .character {
@@ -1944,10 +1945,22 @@ button {
         z-index: 2;
     }
 
+    .top-contents-wrap-character:nth-child(1) {
+        mix-blend-mode: difference;
+        z-index: 2;
+    }
+
+    
+
     .character {
         font-size: 38px;
         letter-spacing: -1px;
         line-height: 48px;
+    }
+
+    .character span {
+        color: white;
+        mix-blend-mode: difference;
     }
 
     .text {
