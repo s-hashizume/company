@@ -139,6 +139,9 @@ button {
 
 .hidden-character {
     color: #191919;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.8;
 }
 
 .header-nav__listLv2 {
@@ -163,7 +166,7 @@ button {
 }
 
 .header-nav__listLv2 li:hover .hidden-allow {
-    stroke: #fff;
+    fill: #fff;
 }
 
 .header-nav__listLv2 span {
@@ -177,6 +180,7 @@ button {
 .header-nav__listLv2 svg {
     width: 14px;
     height: 11px;
+    stroke: none;
 }
 
 .header-nav__listLv2 a {
