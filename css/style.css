@@ -87,7 +87,7 @@ button {
 
 
 
-.header-wrapper-menu-button {
+.header-wrapper-menu-button, .header-wrapper-nav-list-link {
     display: inline-flex;
     align-items: center;
     color: #191919;
@@ -894,7 +894,10 @@ button {
     transition: background-color 0.3s;
 }
 
-
+.story-more-link span {
+    font-size: 15.5px;
+    font-weight: 400;
+}
 
 .story-more-icon {
     margin-right: 16px;
@@ -928,11 +931,13 @@ button {
     background-color: #C80D2F;
     transition: 0.3s;
 }
-
-.story-more:hover .story-more-icon svg,
-.story-more:hover .story-more-link span {
+.story-more:hover .story-more-icon svg {
     fill: #fff;
+}
+
+.story-more:hover .story-more-link span {
     color: #fff;
+    opacity: 0.7;
 }
 
 .story-more:hover .story-more-icon {
