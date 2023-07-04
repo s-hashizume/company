@@ -492,28 +492,31 @@ button {
 .media-ctrl-button-left {
     width: 33px;
     height: 33px;
-    border: 1px solid #C80D2F;
+    border: 1px solid #D9D9D9;
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
     transition: background-color 0.3s;
+    cursor: default;
 }
 
-.media-ctrl-button-left:hover, .media-ctrl-button-right:hover {
+.media-ctrl-button-right:hover {
     background-color: #C70D2E;
 }
 
-.media-ctrl-button-left svg:hover {
-    fill: #fff;
-}
+
 
 .media-ctrl-icon {
     width: 8px;
     height: auto;
     position: relative;
     fill: #C80D2F;
+}
+
+.media-ctrl-button-left .media-ctrl-icon {
+    fill: #D9D9D9;
 }
 
 .media-ctrl-button-right {
