@@ -1582,19 +1582,19 @@ button {
 .footer-pagetop {
     position: relative;
     height: 64px;
-    margin-bottom: 1px;/*何で入れている？*/
+    margin-bottom: -1px/*これによりこのエリアが1px上方にあることになる*/
 }
 
 .footer-pagetop a {
     border-top: 1px solid #191919;
     position: absolute;
-    top: -1px;
+    top: -1px;/*footer-pagetopで上方に上げた分だけこのエリアを上方にあげる*/
     right: 0;/*これで右寄せになる */
     display: flex;/*flexにした理由は？*/
     justify-content: center;
     align-items: center;
     width: 256px;
-    height: 63px;
+    height: 100%;
 }
 
 .footer-pagetop a:hover  {
