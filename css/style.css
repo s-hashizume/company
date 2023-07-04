@@ -286,6 +286,12 @@ button {
         top: auto;
         left: 4rem;
         height: 613px;
+        bottom: 13.583333vw;
+    }
+}
+
+@media (min-width: 2560px) {
+    .top-contents-wrap::before {
         bottom: 21.5vw;
     }
 }
