@@ -1426,7 +1426,7 @@ button {
     border-top: 1px solid #D9D9D9;
 }
 
-.recruit-link{
+.contact-link{
     height: 417px;
     display: block;
     position: relative;
@@ -1434,20 +1434,16 @@ button {
     /* background-color: #fff; */
 }
 
-.recruit-link:hover .recruit-title h2,
-.recruit-link:hover .recruit-body,
-.inquiry-link:hover .inquiry-title h2,
-.inquiry-link:hover .inquiry-body {
+.contact-link:hover .contact-title h2,
+.contact-link:hover .contact-body {
     color: #fff;
 }
 
-.recruit-link:hover .recruit-btn-simbol,
-.inquiry-link:hover .recruit-btn-simbol {
+.contact-link:hover .recruit-btn-simbol {
     background: #C80D2F;
 } 
 
-.recruit-link:hover .c-btn-circle_ico,
-.inquiry-link:hover .c-btn-circle_ico {
+.contact-link:hover .c-btn-circle_ico {
     stroke: #fff;
 } 
 
@@ -1473,8 +1469,7 @@ button {
     transform: scale(1.0);
 }
 
-.recruit-link:hover .action-bg,
-.inquiry-link:hover .action-bg {
+.contact-link:hover .action-bg {
     opacity: 1;
     transform: scale(1.0);
 }
@@ -1485,7 +1480,7 @@ button {
     height: 100%;
 }
 
-.recruit-container{
+.contact-container{
     position: relative;
     height: 100%;
     width: 100%;
@@ -1494,30 +1489,30 @@ button {
     padding: 0 128px;
 }
 
-.recruit-wrap{
+.contact-wrap{
     display: flex;
     padding-top: 149px;
 }
 
-.recruit-title{
+.contact-title{
     width: 384px;
     flex: 0 0 auto;
 }
 
-.recruit-title h2{
+.contact-title h2{
     font-family: 'Libre Baskerville', serif;
     font-size: 50px;
     color: #191919;
     font-weight: 400;
 }
 
-.recruit-body{
+.contact-body{
     padding-right: 70px;
     color: #191919;
     flex: 0 0 auto;
 }
 
-.recruit-body h3 {
+.contact-body h3 {
     margin-top: 0;
     font-size: 32px;
     line-height: 48px;
@@ -1525,7 +1520,7 @@ button {
     font-weight: 400;
 }
 
-.recruit-body p {
+.contact-body p {
     display: block;
     margin-top: 20px;
     font-size: 15px;
@@ -1579,82 +1574,6 @@ button {
     border-top: 1px solid #D9D9D9;
     position: relative;
 }
-
-.inquiry-link{
-    height: 417px;
-    display: block;
-    position: relative;
-    background-color: #fff;
-}
-
-.inquiry-action-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1440px;
-    height: 417px;
-    object-fit: cover;
-    /* opacity: 0; */
-    transform: scale(1.1);
-    transition: 0.6s;
-}
-.action-bg img{}
-
-.iquiry-container{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 128px;
-}
-
-.inquiry-wrap{
-    display: flex;
-    padding-top: 149px;
-}
-
-.inquiry-title{
-    width: 384px;
-    flex: 0 0 auto;
-}
-
-.inquiry-title h2{
-    font-family: 'Libre Baskerville', serif;
-    font-size: 50px;
-    color: #191919;
-    font-weight: 400;
-}
-
-.inquiry-body{
-    padding-right: 70px;
-    color: #191919;
-    width: 794px;
-    flex: 0 0 auto;
-}
-
-.inquiry-body h3{
-    margin-top: 0;
-    font-size: 32px;
-    line-height: 48px;
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ 明朝", serif;
-    font-weight: 400;
-}
-
-.inquiry-body p{
-    display: block;
-    margin-top: 20px;
-    font-size: 15px;
-    line-height: 27px;
-}
-
-.inquiry-btn{}
-
-.inquiry-btn-simbol{}
-
-
-
-
 /*------------------------------------------------------footerに対する指定----------------------------------------------------------------------------------*/
 /*---footerの一番上の矢印ゾーン---*/
 .footer {
