@@ -433,18 +433,18 @@ button {
 }
 
 .row1{
-     width: 624.5px;
      background-color: #C70D2E;
      padding: 14px 10px 8px;
      position: relative;
      z-index: 1;
+     display: inline-block;
 }
 
 .row2{
-    width: 727px;
     margin-left: 180px;
     background-color: #C70D2E;
     padding: 14px 10px 8px;
+    display: inline-block;
 }
 
 /*------------------------------------------mediaに対する指定----------------------------------*/
