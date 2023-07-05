@@ -202,12 +202,14 @@ button {
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.3s ease-out;
+    width: 224px;
+    height: 168px;
 }
 
 .header-wrapper-contact a {
     display: flex;
-    width: 224px;
-    height: 168px;
+    width: 100%;
+    height: 100%;
     color: #fff;
     align-items: center;
     justify-content: center;
@@ -251,6 +253,10 @@ button {
 .header-wrapper-contact:hover {
     background-position: left bottom;
 }
+
+.scrolled .header-wrapper-contact {
+    height: 100%;
+} 
 /*------------------------------------------トップに対する指定----------------------------------*/
 .top {
 
