@@ -116,6 +116,7 @@ button {
 
 
 .header-wrapper-nav-list-link {
+    font-family: Helvetica, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
     color: #191919;
 }
 
@@ -1351,6 +1352,8 @@ button {
     color: #C70D2E;
     display: inline-flex;
     align-items: center;
+    font-size: 15px;
+    letter-spacing: 0.9px;
 }
 
 .awards-athor-btn{
@@ -1928,6 +1931,8 @@ button {
         display: block;
         position: relative;
         top: auto;
+        padding-bottom: 76.9px;
+
     }
 
     .p-c-l__head {
@@ -2173,6 +2178,10 @@ button {
         display: none;
     }
 
+    .c-btn-circle-right {
+        margin-left: 15.3px;
+    }
+
     .feature__ctrl::after{
         display: none;
     }
@@ -2204,7 +2213,7 @@ button {
 
     .c-card-feature-case__meta {
         font-size: 10px;
-        margin-top: 0;
+        margin-top: 12.5px;
         gap: 8px;
     }
 
@@ -2214,6 +2223,14 @@ button {
 
     .c-card-feature-case__pic img {
         width: 186px;
+    }
+
+    .c-card-feature-case__meta dl {
+        line-height: 15px;
+    }
+
+    .c-card-feature-case__meta dt {
+        font-size: 10px;
     }
 
     .service {
@@ -2336,6 +2353,11 @@ button {
         height: 100%;
     }
 
+    .recruit-btn-simbol svg {
+        width: 7.6px;
+        height: auto;
+    }
+
     .break {
         display: block;
     }
@@ -2367,10 +2389,15 @@ button {
 
     .footer-nav {
         display: block;
+        margin-top: 0;
     }
 
     .footer-nav__link {
         opacity: 1;
+    }
+
+    .footer-nav__link span, .footer-nav__list a {
+        font-size: 14px;
     }
 
     .footer-nav__link i {
@@ -2400,6 +2427,7 @@ button {
     .footer-nav__listLv2 li {
         width: 100%;
         font-weight: 100;
+        margin-top: 9.6px;
     }
 
     .footer-nav__listLv2 a {
@@ -2410,6 +2438,10 @@ button {
     .footer-report {
         margin-top: 47px;
         opacity: 0.8;
+    }
+
+    .footer-report a {
+        padding-bottom: 22px;
     }
 
     .footer-bnr {
