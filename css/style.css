@@ -284,7 +284,7 @@ button {
     background: #F0F4F8;
     display: block;
     position: absolute;
-    top: 309px;
+    top: auto;
     left: 64px;
     height: 460px;
     width: 1376px;
@@ -295,7 +295,7 @@ button {
 
 @media (min-width: 2560px) {
     .top-contents-wrap::before {
-        bottom: 59.5vh;
+        bottom: 79.5vh;
     }
 }
 
@@ -1814,7 +1814,7 @@ button {
     }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1920px) {
     .top-contents-wrap:before {
         top: auto;
         left: 4rem;
