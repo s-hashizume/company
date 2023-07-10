@@ -693,13 +693,11 @@ button {
 .c-card-blog__date {
     font-size: 15px;
     line-height: 18px;
-    font-family: "Inter", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
     letter-spacing: -0.15px;
     color: #A6A6A8;
 }
 
 .c-card-blog__title {
-    font-family: "Inter", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
     font-size: 15px;
     line-height: 21px;
     margin-top: 12px;
@@ -861,7 +859,6 @@ button {
 .story-description-text {
     line-height: 43.2px;
     padding-right: 64px;
-    font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
     font-size: 18px;
 }
 
@@ -1074,7 +1071,6 @@ button {
 
 .feature__count {
     align-self: center;
-    font-family: "Inter", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
     font-weight: 400;
     font-size: 15px;
     color: #C80D2F;
@@ -1214,7 +1210,6 @@ button {
     margin-top: 30px;
     font-size: 17px;
     line-height: 30.6px;
-    font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
     opacity: 0.8;
 }
 
@@ -1249,9 +1244,6 @@ button {
     color: #C80D2F;
 }
 
-.service-items-link:hover .service-items-title-btn-icon {
-    background-color: #C80D2F;
-}
 
 .service-items-link:hover .c-btn-circle__ico {
     fill: #fff;
@@ -1298,8 +1290,24 @@ button {
     transition: background-color 0.3s;
 }
 
-.service-items-title-btn-icon:hover {
-    background-color: #C70D2E;
+.service-items-title-btn-icon::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #C80D2F;
+    border-radius: 100%;
+    transform: scale(0);
+    transition: 0.3s;
+}
+
+
+.service-items-link:hover .service-items-title-btn-icon::before {
+    transform: scale(1.15);
+    transition-duration: 0.3s;
 }
 
 .c-btn-circle__ico:hover {
@@ -1352,7 +1360,6 @@ button {
 
 .awards-li {
     font-size: 15px;
-    font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
     margin-bottom: 20px;
 }
 
@@ -1412,7 +1419,6 @@ button {
 
 .client-text {
     margin-top: 32px;
-    font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "メイリオ", "Meiryo", sans-serif;
 }
 
 .client-logos {
