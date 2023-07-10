@@ -275,11 +275,7 @@ button {
 
 .top-contents {}
 
-@media (min-width: 1024px) {
-    .top-contents {
-        height: 67.0138888889vw;
-    }
-}
+
 
 .top-contents-wrap {
     margin-top: 120px;
@@ -300,14 +296,7 @@ button {
     z-index: -1;
 }
 
-@media screen and (min-width: 1024px) {
-    .top-contents-wrap:before {
-        top: auto;
-        left: 4rem;
-        height: 613px;
-        bottom: 29.58vh;
-    }
-}
+
 
 @media (min-width: 2560px) {
     .top-contents-wrap::before {
@@ -337,13 +326,6 @@ button {
     padding: 4.6px 0;
 }
 
-@media screen and (min-width: 1024px) {
-
-    .top-contents-wrap-character {
-        left: 8.8888888889vw;
-        top: 9.7222222222vw;
-    }
-}
 
 .text {
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ 明朝", serif;
@@ -684,11 +666,7 @@ button {
     font-size: 12px;
 }
 
-@media (min-width: 1024px) {
-    .c-card-blog__cate span {
-        height: 17px;
-    }
-}
+
 
 .c-card-blog__date {
     font-size: 15px;
@@ -1839,7 +1817,7 @@ button {
 
 
 /*------------------------------------------------------サイドバーに対する指定----------------------------------------------------------------------------------*/
-.aside-container {}
+
 
 .aside-c-border {
     height: 100%;
@@ -1870,6 +1848,42 @@ button {
     line-height: 1;
     white-space: nowrap;
 }
+
+/*-----------------タブレット版-------------------------------------------------------------------------*/
+
+
+@media (min-width: 1024px) {
+    .top-contents {
+        height: 67.0138888889vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .top-contents-wrap:before {
+        top: auto;
+        left: 4rem;
+        height: 613px;
+        bottom: 29.58vh;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .top-contents-wrap-character {
+        left: 8.8888888889vw;
+        top: 9.7222222222vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .c-card-blog__cate span {
+        height: 17px;
+    }
+}
+
+
+
+/*-----------------スマホ版-------------------------------------------------------------------------*/
 
 @media (max-width: 744px) {
 
