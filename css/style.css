@@ -305,13 +305,13 @@ button {
         top: auto;
         left: 4rem;
         height: 613px;
-        bottom: 13.583333vw;
+        bottom: 29.58vh;
     }
 }
 
 @media (min-width: 2560px) {
     .top-contents-wrap::before {
-        bottom: 21.5vw;
+        bottom: 59.5vh;
     }
 }
 
@@ -1871,7 +1871,7 @@ button {
     white-space: nowrap;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 744px) {
 
     #header {
         height: 72px;
@@ -2031,7 +2031,6 @@ button {
 
     .top-contents-wrap-character {
         mix-blend-mode: difference;
-        z-index: 2;
     }
 
 
