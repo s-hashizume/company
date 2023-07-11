@@ -270,6 +270,14 @@ button {
     height: 100%;
 }
 
+.header-contact-sm {
+    display: none;
+}
+
+.menu-allow:checked~.header-nav__listLv2 li {
+    display: block;
+}
+
 /*------------------------------------------トップに対する指定----------------------------------*/
 
 .top-contents-wrap {
@@ -1503,7 +1511,7 @@ button {
     transform: scale(1.1);
 }
 
-.contact-link:hover  {
+.contact-link:hover {
     color: #fff;
 }
 
@@ -1772,6 +1780,7 @@ button {
 
 
 
+
 /*------------------------------------------------------サイドバーに対する指定----------------------------------------------------------------------------------*/
 
 
@@ -1870,6 +1879,22 @@ button {
         position: fixed;
     }
 
+    .enterprise:hover .header-nav__listLv2,
+    .characteristic:hover .header-nav__listLv2,
+    .menu-service:hover .header-nav__listLv2 {
+        display: none;
+    }
+
+    .nav_op .header-wrapper-nav {
+        transform: none;
+        transition: 0.5s;
+        display: block;
+    }
+
+    .nav_op .header-contact-sm {
+        display: block;
+    }
+
     .nav_op .g_nav_toggle .bar {
         position: absolute;
         top: 50%;
@@ -1893,8 +1918,6 @@ button {
 
     .header-wrapper-nav {
         background: rgb(255, 255, 255);
-        z-index: 3;
-        display: none;
         height: 667px;
         position: absolute;
         top: 0;
@@ -1902,6 +1925,8 @@ button {
         width: 100%;
         padding: 125px 19px 96px;
         position: fixed;
+        transform: translateY(-100%);
+        transition: 0.5s;
     }
 
     .header-wrapper-nav-list {
@@ -2010,6 +2035,10 @@ button {
         color: white;
         mix-blend-mode: difference;
         /*上記によって文字色を白にしている状態で、背景色が白に比べて差異の程度を色として反映している*/
+    }
+
+    .nav_op .character {
+        display: none;
     }
 
     .text {

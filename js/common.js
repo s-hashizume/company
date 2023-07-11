@@ -59,3 +59,14 @@ $('.header-humberger-menu').on('click', function () {
         state = false;
     }
 });
+
+
+$(document).ready(function() {
+    $(".header-wrapper-menu-button").click(function() {
+        // 他の開いているメニューを閉じる
+        $(".header-nav__listLv2").not($(this).next(".header-nav__listLv2")).slideUp();
+
+        // クリックしたメニューを開閉する
+        $(this).next(".header-nav__listLv2").slideToggle();
+    });
+});
