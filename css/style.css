@@ -1875,30 +1875,30 @@ button {
         display: block;
     }
 
-    .nav_op .g_nav_toggle .bar {
+    .nav_op .humberger-menu span {
         position: absolute;
         top: 50%;
-        left: 0;
-        right: 0;
-        width: 100%;
-        margin: 0 auto;
+        width: 38px;
+    }/*幅を38pxにして上下中央に位置決めする*/
+
+    .nav_op .humberger-menu span:nth-child(1) {
+        transform: scale(-1, -1) rotate(45deg);/*scale(-1, -1)でx軸に反転とy軸に反転の動作が入った後、rotate(45deg)によって45度に回転する*/
+        transition: 0.6s;
     }
 
-    .nav_op .g_nav_toggle .bar:first-child {
-        transform: translateY(-50%) rotate(45deg);
-    }
-
-    .nav_op .g_nav_toggle .bar:nth-child(2) {
+    .nav_op .humberger-menu span:nth-child(2) {
         transform: scale(0);
+        transition: 0.6s;
     }
 
-    .nav_op .g_nav_toggle .bar:nth-child(3) {
-        transform: translateY(-50%) rotate(-45deg);
+    .nav_op .humberger-menu span:nth-child(3) {
+        transform: scale(-1, -1) rotate(-45deg);/*-45度に回転する*/
+        transition: 0.6s;
     }
 
     .header-wrapper-nav {
         background: rgb(255, 255, 255);
-        height: 667px;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
