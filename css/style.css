@@ -2007,11 +2007,10 @@ button {
         top: 220px;
         left: 9px;
         z-index: 2;
-    }
-
-    .top-contents-wrap-character {
         mix-blend-mode: difference;
     }
+
+    
 
     .character {
         font-size: 38px;
@@ -2062,7 +2061,7 @@ button {
 
     .p-c-lead {
         display: block;
-        top: auto;
+        position: static;
     }
 
     .p-c-l__head {
