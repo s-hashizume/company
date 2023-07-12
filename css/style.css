@@ -589,11 +589,11 @@ button {
 
 
 .slide-wrapper {
-    
+    display: flex;
 }
 
 .slide {
-    
+    margin-right: 32px;
 }
 
 .c-card-blog {
