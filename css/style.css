@@ -1801,6 +1801,42 @@ button {
     white-space: nowrap;
 }
 
+/*-----------------Loadingに対する指定-------------------------------------------------------------------------*/
+.loading {
+    position: fixed;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    animation: loading 1s 1.25s both;
+}
+
+.loading img {
+    width: 200px;
+    animation: opacity 0.5s 0.25s both;
+}
+
+@keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes loading {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+}
+
 /*-----------------タブレット版-------------------------------------------------------------------------*/
 
 
@@ -2120,27 +2156,20 @@ button {
 
     .media-slide {
         width: 163px;
-        margin-top: 14px;
         height: 231px;
+        margin-top: 14px;
     }
 
     .c-card-blog__link::after {
         bottom: -9.5px;
     }
 
-    .swiper {
-        height: 100%;
-    }
 
-    .slide {
+
+    /* .slide {
         width: 100%;
         height: 100%;
     }
-
-    .c-card-blog__pic img {
-        width: 100%;
-    }
-
 
     .slide {
         margin-right: 10px;
@@ -2149,6 +2178,16 @@ button {
     .slide {
         height: auto;
         flex-shrink: 0;
+    } */
+
+    .slide {
+        flex-shrink: 0;
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .c-card-blog__pic img {
+        width: 100%;
     }
 
     .c-card-blog__meta {
@@ -2157,6 +2196,7 @@ button {
 
     .c-card-blog__cate span {
         height: 15px;
+        box-sizing: content-box;
     }
 
     .c-card-blog__date {
@@ -2335,22 +2375,26 @@ button {
         margin-top: 28px;
     }
 
-    .feature-slide-list {
+    /* .feature-slide-list {
         width: 288px;
         height: 211px;
         padding-top: 0;
         margin-top: 30px;
-    }
+    } */
 
-    .feature-slide {
+    /* .feature-slide {
         width: 100%;
         height: 100%;
+        margin-right: 10px;
+    } */
+
+    .feature-slide {
+        width: 288px;
         margin-right: 10px;
     }
 
     .c-card-feature-case__link {
         padding: 28px 19px 9px;
-        height: 100%;
     }
 
     .c-card-feature-case__meta {
