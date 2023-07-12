@@ -1414,8 +1414,7 @@ button {
     object-fit: cover;
     opacity: 0;
     transform: scale(1.1);
-    transition: opacity 0.3s;
-    transition: transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
 }
 
 
@@ -1500,7 +1499,7 @@ button {
     border-radius: 100%;
     z-index: 1;
     transform: scale(0);
-    transition: 0.3s ease all;
+    transition: 0.3s;
 }
 
 .contact-link:hover .recruit-btn-simbol::before {
@@ -2064,8 +2063,6 @@ button {
     .p-c-lead {
         display: block;
         top: auto;
-        padding-bottom: 76.9px;
-
     }
 
     .p-c-l__head {
@@ -2079,7 +2076,6 @@ button {
         font-size: 20px;
         font-weight: 200;
         margin-top: 38px;
-        position: absolute;
     }
 
     .row1 {
