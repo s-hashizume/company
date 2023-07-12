@@ -2143,18 +2143,17 @@ button {
     }
 
     .media-slide {
-        width: 163px;
         height: 231px;
         margin-top: 14px;
     }
 
     .c-card-blog__link::after {
-        bottom: -9.5px;
+        width: 100%;
     }
 
     .slide {
         flex-shrink: 0;
-        width: 100%;
+        width: 163px;
         margin-right: 10px;
     }
 
