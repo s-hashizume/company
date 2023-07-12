@@ -2148,6 +2148,7 @@ button {
 
     .slide {
         height: auto;
+        flex-shrink: 0;
     }
 
     .c-card-blog__meta {
