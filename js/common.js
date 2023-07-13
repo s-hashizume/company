@@ -72,14 +72,24 @@ $(document).ready(function() {
 });
 
 //----スライダーに関する設定---------
-// $(document).ready(function(){
-//     $('.top-images-wrapper').slick({
-//         autoplay: true, // 自動再生ON
-//         fade: true, // フェードON
-//         arrows: false, // 矢印OFF
-//         speed: 2000, // スライド、フェードアニメーションの速度2000ミリ秒
-//         autoplaySpeed: 4000, // 自動再生速度4000ミリ秒
-//         pauseOnFocus: false, // フォーカスで一時停止OFF
-//         pauseOnHover: false, // マウスホバーで一時停止OFF
-//     });
-// });
+var $slide = $(".otameshi")
+  .slick({
+    fade: true,    // fedeオン
+    speed: 1500,   // 画像切り替えにかかる時間（ミリ秒）
+    autoplaySpeed: 3000,   // 自動スライド切り替え速度
+    arrows: false,         // 矢印表示・非表示
+    autoplay: true,        // 自動再生
+    slidesToShow: 1,       // スライド表示数
+    slidesToScroll: 1,     // スライドする数
+    infinite: true         // 無限リピート オン・オフ
+  })
+  .on({
+    beforeChange: function(event, slick, currentSlide, nextSlide) {
+        $(".slick-slide", this).eq(currentSlide).addClass("preve-slide");
+        $(".slick-slide", this).eq(nextSlide).addClass("slide-animation");
+    },
+    afterChange: function() {
+        $(".preve-slide", this).removeClass("preve-slide　slide-animation");
+    }
+  });
+$slide.find(".slick-slide").eq(0).addClass("slide-animation");

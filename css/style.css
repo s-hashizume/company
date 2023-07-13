@@ -384,6 +384,18 @@ button {
     object-fit: cover;
 }
 
+.slide-animation{
+    animation: fadezoom 8s 0s forwards;
+}
+@keyframes fadezoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
 
 .purpose {
     width: 100%;
