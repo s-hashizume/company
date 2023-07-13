@@ -70,3 +70,16 @@ $(document).ready(function() {
         $(this).next(".header-nav__listLv2").slideToggle();
     });
 });
+
+//----スライダーに関する設定---------
+// $(document).ready(function(){
+//     $('.top-images-wrapper').slick({
+//         autoplay: true, // 自動再生ON
+//         fade: true, // フェードON
+//         arrows: false, // 矢印OFF
+//         speed: 2000, // スライド、フェードアニメーションの速度2000ミリ秒
+//         autoplaySpeed: 4000, // 自動再生速度4000ミリ秒
+//         pauseOnFocus: false, // フォーカスで一時停止OFF
+//         pauseOnHover: false, // マウスホバーで一時停止OFF
+//     });
+// });
