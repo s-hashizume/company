@@ -286,6 +286,10 @@ button {
     display: block;
 }
 
+.expanded {
+    height: 214px;
+}
+
 /*------------------------------------------トップに対する指定----------------------------------*/
 
 .top-contents-wrap {
@@ -1961,10 +1965,25 @@ button {
         transition: 0.5s;
     }
 
+    .header-nav__listLv2 {
+        margin-top: 19px;
+    }
+
     .header-wrapper-nav-list {
         display: flex;
         flex-direction: column;
         gap: 30px;
+    }
+
+    .header-wrapper-nav-list li {
+        width: 336px;
+        background: #fff;
+    }
+
+    .hidden-character {
+        font-size: 17px;
+        font-weight: 700;
+        opacity: 1;
     }
 
     .menu-category,

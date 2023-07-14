@@ -60,6 +60,7 @@ $('.header-humberger-menu').on('click', function () {
     }
 });
 
+//--------アコーディオンメニューに対する設定-------------------
 
 $(document).ready(function() {
     $(".header-wrapper-menu-button").click(function() {
@@ -70,6 +71,8 @@ $(document).ready(function() {
         $(this).next(".header-nav__listLv2").slideToggle();
     });
 });
+
+
 
 //----スライダーに関する設定---------
 var $slide = $(".otameshi")
@@ -93,3 +96,65 @@ var $slide = $(".otameshi")
     }
   });
 $slide.find(".slick-slide").eq(0).addClass("slide-animation");
+
+
+// $(document).ready(function() {
+//     $(".header-wrapper-menu-button").click(function() {
+//         var parentListItem = $(this).parent('li');
+//         if(parentListItem.hasClass('expanded')) {
+//             parentListItem.removeClass('expanded');
+//         } else {
+//             // Remove 'expanded' from any other list items
+//             $(".header-wrapper-nav-list li.expanded").removeClass('expanded');
+            
+//             // Add 'expanded' to the parent of this button
+//             parentListItem.addClass('expanded');
+//         }
+//     });
+// });
+
+$(document).ready(function() {
+    $(".header-wrapper-menu-button").click(function() {
+        var parentListItem = $(this).parent('li');
+
+        if(parentListItem.hasClass('expanded')) {
+            parentListItem.animate({height: parentListItem.attr('data-original-height')}, 500);
+            parentListItem.removeClass('expanded');
+        } else {
+            // Remove 'expanded' from any other list items
+            $(".header-wrapper-nav-list li.expanded").animate({height: $(this).attr('data-original-height')}, 500);
+            $(".header-wrapper-nav-list li.expanded").removeClass('expanded');
+            
+            // Add 'expanded' to the parent of this button
+            parentListItem.attr('data-original-height', parentListItem.height()); // Save the original height
+            parentListItem.animate({height: '214px'}, 500);
+            parentListItem.addClass('expanded');
+        }
+    });
+});
+
+// $(document).ready(function() {
+//     $(".header-wrapper-menu-button").click(function() {
+//         var parentListItem = $(this).parent('li');
+
+//         if(parentListItem.hasClass('expanded')) {
+//             parentListItem.animate({height: parentListItem.attr('data-original-height')}, 500);
+//             parentListItem.removeClass('expanded');
+//         } else {
+//             // Remove 'expanded' from any other list items
+//             $(".header-wrapper-nav-list li.expanded").animate({height: $(this).attr('data-original-height')}, 500);
+//             $(".header-wrapper-nav-list li.expanded").removeClass('expanded');
+            
+//             // Add 'expanded' to the parent of this button
+//             parentListItem.attr('data-original-height', parentListItem.height()); // Save the original height
+            
+//             // Check which class it belongs to and set the height accordingly
+//             if(parentListItem.hasClass('enterprise')) {
+//                 parentListItem.animate({height: '214px'}, 500);
+//             } else if(parentListItem.hasClass('characteristic') || parentListItem.hasClass('menu-service')) {
+//                 parentListItem.animate({height: '174px'}, 500);
+//             }
+//             parentListItem.addClass('expanded');
+//         }
+//     });
+// });
