@@ -160,6 +160,7 @@ button {
     display: none;
     background-color: #F0F4F8;
     color: #191919;
+    overflow: hidden;
 }
 
 .header-nav__listLv2 li {
@@ -288,6 +289,10 @@ button {
 
 .expanded {
     height: 214px;
+}
+
+.hidden-list_open {
+    position: static;
 }
 
 /*------------------------------------------トップに対する指定----------------------------------*/

@@ -60,22 +60,11 @@ $('.header-humberger-menu').on('click', function () {
     }
 });
 
-//--------アコーディオンメニューに対する設定-------------------
-
-$(document).ready(function() {
-    $(".header-wrapper-menu-button").click(function() {
-        // 他の開いているメニューを閉じる
-        $(".header-nav__listLv2").not($(this).next(".header-nav__listLv2")).slideUp();
-
-        // クリックしたメニューを開閉する
-        $(this).next(".header-nav__listLv2").slideToggle();
-    });
-});
 
 
 
 //----スライダーに関する設定---------
-var $slide = $(".otameshi")
+const $slide = $(".change-slides")
   .slick({
     fade: true,    // fedeオン
     speed: 1500,   // 画像切り替えにかかる時間（ミリ秒）
@@ -92,69 +81,18 @@ var $slide = $(".otameshi")
         $(".slick-slide", this).eq(nextSlide).addClass("slide-animation");
     },
     afterChange: function() {
-        $(".preve-slide", this).removeClass("preve-slide　slide-animation");
+        $(".preve-slide", this).removeClass("preve-slide slide-animation");
     }
   });
 $slide.find(".slick-slide").eq(0).addClass("slide-animation");
 
 
-// $(document).ready(function() {
-//     $(".header-wrapper-menu-button").click(function() {
-//         var parentListItem = $(this).parent('li');
-//         if(parentListItem.hasClass('expanded')) {
-//             parentListItem.removeClass('expanded');
-//         } else {
-//             // Remove 'expanded' from any other list items
-//             $(".header-wrapper-nav-list li.expanded").removeClass('expanded');
-            
-//             // Add 'expanded' to the parent of this button
-//             parentListItem.addClass('expanded');
-//         }
-//     });
-// });
+//--------------------アコーディオンメニューの設定------------------------
 
-$(document).ready(function() {
-    $(".header-wrapper-menu-button").click(function() {
-        var parentListItem = $(this).parent('li');
-
-        if(parentListItem.hasClass('expanded')) {
-            parentListItem.animate({height: parentListItem.attr('data-original-height')}, 500);
-            parentListItem.removeClass('expanded');
-        } else {
-            // Remove 'expanded' from any other list items
-            $(".header-wrapper-nav-list li.expanded").animate({height: $(this).attr('data-original-height')}, 500);
-            $(".header-wrapper-nav-list li.expanded").removeClass('expanded');
-            
-            // Add 'expanded' to the parent of this button
-            parentListItem.attr('data-original-height', parentListItem.height()); // Save the original height
-            parentListItem.animate({height: '214px'}, 500);
-            parentListItem.addClass('expanded');
-        }
-    });
+$(function(){//slide toggleを使ってみる
+	$('.header-wrapper-menu-button').on('click',function(){
+		$(this).toggleClass('open');
+		$(this).parent().find('.header-nav__listLv2').slideToggle();
+		$(this).parent().find('.header-nav__listLv2').addClass("hidden-list_open");
+	});
 });
-
-// $(document).ready(function() {
-//     $(".header-wrapper-menu-button").click(function() {
-//         var parentListItem = $(this).parent('li');
-
-//         if(parentListItem.hasClass('expanded')) {
-//             parentListItem.animate({height: parentListItem.attr('data-original-height')}, 500);
-//             parentListItem.removeClass('expanded');
-//         } else {
-//             // Remove 'expanded' from any other list items
-//             $(".header-wrapper-nav-list li.expanded").animate({height: $(this).attr('data-original-height')}, 500);
-//             $(".header-wrapper-nav-list li.expanded").removeClass('expanded');
-            
-//             // Add 'expanded' to the parent of this button
-//             parentListItem.attr('data-original-height', parentListItem.height()); // Save the original height
-            
-//             // Check which class it belongs to and set the height accordingly
-//             if(parentListItem.hasClass('enterprise')) {
-//                 parentListItem.animate({height: '214px'}, 500);
-//             } else if(parentListItem.hasClass('characteristic') || parentListItem.hasClass('menu-service')) {
-//                 parentListItem.animate({height: '174px'}, 500);
-//             }
-//             parentListItem.addClass('expanded');
-//         }
-//     });
-// });
