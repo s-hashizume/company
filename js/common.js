@@ -1,8 +1,8 @@
 
 //*スクロールしていくとheaderのお問い合わせボタンが小さくなる-------------------------------------------------------------------------------------------
 $(function () {
-    var _height = window.innerHeight;//*window.innerHeightプロパティを使用してvhを取得
-    var b_height = $('body').height();//*jQueryのheight関数を使用してbody要素の高さを取得
+    let _height = window.innerHeight;//*window.innerHeightプロパティを使用してvhを取得
+    let b_height = $('body').height();//*jQueryのheight関数を使用してbody要素の高さを取得
 
     $(window).on('scroll', function () {//*ウィンドウがスクロールするたびに実行される関数
         if ($(window).scrollTop() < _height * 0.5) {//:スクロール位置がvhの半分未満だった場合
@@ -44,7 +44,7 @@ $(window).on('load', function () {
     $('body').removeClass('nav_op');
 });
 
-var state = false;
+let state = false;
 var scrollpos;
 $('.header-humberger-menu').on('click', function () {
     //    $('body').toggleClass('nav_op');
@@ -90,9 +90,11 @@ $slide.find(".slick-slide").eq(0).addClass("slide-animation");
 //--------------------アコーディオンメニューの設定------------------------
 
 $(function(){//slide toggleを使ってみる
-	$('.header-wrapper-menu-button').on('click',function(){
-		$(this).toggleClass('open');
-		$(this).parent().find('.header-nav__listLv2').slideToggle();
-		$(this).parent().find('.header-nav__listLv2').addClass("hidden-list_open");
-	});
+    if('ontouchstart' in window) {
+        $('.header-wrapper-menu-button').on('click',function(){
+            $(this).toggleClass('open');
+            $(this).parent().find('.header-nav__listLv2').slideToggle();
+            $(this).parent().find('.header-nav__listLv2').addClass("hidden-list_open");
+        });
+    }
 });
