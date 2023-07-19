@@ -98,3 +98,21 @@ $(function(){//slide toggleを使ってみる
         });
     }
 });
+
+//---------------------アコーディオンメニューの矢印方向を変える-----------------------
+
+$(window).on('load', function () {
+    $('body').removeClass('list_op');
+});
+
+let condition = false;
+$('.header-wrapper-nav-list li').on('click', function () {
+    if (condition == false) {
+        $(this).addClass('list_op');
+        condition = true;
+    } else {
+        $(this).removeClass('list_op');
+        condition = false;
+    }
+});
+

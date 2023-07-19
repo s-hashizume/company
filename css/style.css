@@ -107,13 +107,30 @@ button {
     cursor: pointer;
 }
 
-.header-wrapper-menu-button:hover .menu-allow {
-    stroke: #C80D2F;
+
+
+@media (min-width: 1024px) {
+    .header-wrapper-menu-button:hover .menu-category {
+        color: #C80D2F;
+    }
+
+    .header-wrapper-menu-button:hover .menu-allow {
+        stroke: #C80D2F;
+    }
+
+    .header-nav__listLv2 li:hover {
+        background: #C80D2F;
+    }
+    
+    .header-nav__listLv2 li:hover .hidden-character {
+        color: #fff;
+    }
+    
+    .header-nav__listLv2 li:hover .hidden-allow {
+        fill: #fff;
+    }
 }
 
-.header-wrapper-menu-button:hover .menu-category {
-    color: #C80D2F;
-}
 
 .enterprise:hover .header-nav__listLv2,
 .characteristic:hover .header-nav__listLv2,
@@ -154,6 +171,10 @@ button {
     opacity: 0.8;
 }
 
+
+
+
+
 .header-nav__listLv2 {
     position: absolute;
     left: 0;
@@ -168,17 +189,7 @@ button {
     border-bottom: 1px solid #F0F4F8;
 }
 
-.header-nav__listLv2 li:hover {
-    background: #C80D2F;
-}
 
-.header-nav__listLv2 li:hover .hidden-character {
-    color: #fff;
-}
-
-.header-nav__listLv2 li:hover .hidden-allow {
-    fill: #fff;
-}
 
 .header-nav__listLv2 span {
     color: #191919;
@@ -1864,23 +1875,36 @@ button {
     .top-contents {
         height: 67.0138888889vw;
     }
-}
-
-
-
-@media (min-width: 1024px) {
 
     .top-contents-wrap-character {
         left: 8.8888888889vw;
         top: 9.7222222222vw;
     }
-}
 
-@media (min-width: 1024px) {
     .c-card-blog__cate span {
         /* height: 17px; */
     }
+
+
 }
+
+@media (max-width: 1025px) {
+    .hidden-allow {
+        display: none;
+    }
+
+    .header-nav__listLv2 a::before {
+        content: "";
+        display: block;
+        width: 28.8px;
+        height: 1px;
+        background: #D9D9D9;
+        margin-right: 11.5px;
+    }
+}
+
+
+
 
 
 
@@ -1952,6 +1976,11 @@ button {
 
     .nav_op .humberger-menu span:nth-child(3) {
         transform: scale(-1, -1) rotate(-45deg);/*-45度に回転する*/
+        transition: 0.6s;
+    }
+
+    .list_op .menu-allow {
+        transform: scale(-1, -1);
         transition: 0.6s;
     }
 
