@@ -1897,6 +1897,125 @@ button {
 }
 
 
+@media (min-device-width: 1024px) {
+    /*--header--*/
+	#header {
+        height: 85px;
+    }
+
+    .header-wrapper-title {
+        top: 24px;
+        left: 45px;
+    }
+
+    .header-wrapper-title img {
+        width: 60px;
+    }
+
+    .header-wrapper-menu-button, .header-wrapper-nav-list-link {
+        font-size: 10px;
+    }
+
+    .header-wrapper-contact {
+        width: 159px;
+        height: 119px;
+    }
+
+    .header-wrapper-contact span {
+        font-size: 10px;
+    }
+
+    .header-wrapper-nav {
+        right: 184px;
+    }
+
+    .header-wrapper-nav-list {
+        gap: 24px;
+    }
+    /*--aside--*/
+    .aside-c-border {
+        left: 45px;
+    }
+
+    .aside-c-text {
+        width: 45px;
+    }
+    /*--top--*/
+    .top-contents-wrap::before {
+        left: 45px;
+    }
+
+    .top-images-pic img {
+        width: 100%;
+    }
+
+    .top-contents-wrap {
+        margin-top: 85px;
+    }
+
+
+    .p-c-l__head h2 {
+        font-size: 14px;
+    }
+
+    .p-c-l__body {
+        font-size: 35px;
+    }
+
+    .row2 {
+        position: relative;
+        z-index: 1;
+    }
+
+    .p-c-lead  {
+        top: -54px;
+    }
+
+    .p-c-lead::before {
+        width: 398px;
+        height: 187px;
+        left: 229px;
+    }
+
+    /*--media--*/
+    .media-top-blog__head h2 {
+        font-size: 45px;
+    }
+
+    .media-ctrl-button-left, .media-ctrl-button-right, .c-btn-circle, .c-btn-circle-right, .service-items-title-btn-icon {
+        width: 22.8px;
+        height: 22.8px;
+    }
+
+    .media-ctrl-icon, .c-btn-circle__ico {
+        width: 5px;
+    }
+
+    .c-btn-angle__txt {
+        font-size: 10.6px;
+    }
+
+    .c-btn-angle__ico svg {
+        width: 8.5px;
+    }
+
+    .c-btn-angle {
+        padding: 14px 14px 14px;
+    }
+
+    .media-container {
+        padding: 0 91px;
+    }
+
+    .c-card-blog__pic img {
+        width: 227px;
+    }
+
+    .media {
+        padding-top: 35.5px;
+    }
+}
+
 
 
 /*-----------------スマホ版-------------------------------------------------------------------------*/
