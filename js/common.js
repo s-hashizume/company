@@ -94,7 +94,6 @@ $(function(){//slide toggleを使ってみる
         $('.header-wrapper-menu-button').on('click',function(){
             $(this).toggleClass('open');
             $(this).parent().find('.header-nav__listLv2').slideToggle();
-            $(this).parent().find('.header-nav__listLv2').addClass("hidden-list_open");
         });
     }
 });
