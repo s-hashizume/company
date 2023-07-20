@@ -2143,7 +2143,10 @@ button {
         width: 100%;
         position: relative;
         align-items: baseline;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
     }
+
+
 
     .header-wrapper-menu-button i {
         position: absolute;
