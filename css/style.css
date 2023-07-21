@@ -2735,7 +2735,7 @@ button {
 }
 
 /*------------------------------------------------タブレット834pxレスポンシブ--------------------------------------------------------*/
-@media (device-width: 834px) {
+@media (max-width: 834px) {
 
     /*----header----*/
     #header {
@@ -2848,8 +2848,34 @@ button {
         padding-left: 85px;
     }
 
+    .footer-pagetop  {
+        height: 95.5px;
+    }
+
     .footer-container {
         padding: 0 85px;
+    }
+
+    .footer-content {
+        padding: 111px 0 75px ;
+    }
+
+    .footer-nav {
+        font-size: 16.6px;
+        line-height: 24.4px;
+    }
+
+    .footer-bottom {
+        height: 90.6px;
+    }
+
+    .footer-logo {
+        width: 77px;
+        height: 46px;
+    }
+
+    .footer-link a {
+        font-size: 13.3px;
     }
 
 }
