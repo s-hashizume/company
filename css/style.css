@@ -121,11 +121,11 @@ button {
     .header-nav__listLv2 li:hover {
         background: #C80D2F;
     }
-    
+
     .header-nav__listLv2 li:hover .hidden-character {
         color: #fff;
     }
-    
+
     .header-nav__listLv2 li:hover .hidden-allow {
         fill: #fff;
     }
@@ -399,16 +399,18 @@ button {
 
 
 
-.slide-animation{
+.slide-animation {
     animation: fadezoom 8s 0s forwards;
 }
+
 @keyframes fadezoom {
-  0% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1.0);
-  }
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
 }
 
 
@@ -1083,6 +1085,7 @@ button {
 .feature-slide:nth-child(1) {
     background: #a3cfe2;
 }
+
 .feature-slide:nth-child(2) {
     background: #ebe7e1;
 }
@@ -1842,24 +1845,27 @@ button {
 
 @keyframes opacity {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     75% {
         opacity: 1;
     }
+
     100% {
-      opacity: 0;
+        opacity: 0;
     }
 }
 
 @keyframes loading {
     0% {
-      opacity: 1;
-      visibility: visible;
+        opacity: 1;
+        visibility: visible;
     }
+
     100% {
-      opacity: 0;
-      visibility: hidden;
+        opacity: 0;
+        visibility: hidden;
     }
 }
 
@@ -1876,7 +1882,7 @@ button {
         top: 9.7222222222vw;
     }
 
-    
+
 
 
 }
@@ -1898,8 +1904,9 @@ button {
 
 
 @media (device-width: 1024px) {
+
     /*--header--*/
-	#header {
+    #header {
         height: 85px;
     }
 
@@ -1912,7 +1919,8 @@ button {
         width: 60px;
     }
 
-    .header-wrapper-menu-button, .header-wrapper-nav-list-link {
+    .header-wrapper-menu-button,
+    .header-wrapper-nav-list-link {
         font-size: 10px;
     }
 
@@ -1932,6 +1940,7 @@ button {
     .header-wrapper-nav-list {
         gap: 24px;
     }
+
     /*--aside--*/
     .aside-c-border {
         left: 45px;
@@ -1944,6 +1953,7 @@ button {
     .aside-c-text p {
         font-size: 10px;
     }
+
     /*--top--*/
     .top-contents-wrap::before {
         left: 45px;
@@ -1971,7 +1981,7 @@ button {
         z-index: 1;
     }
 
-    .p-c-lead  {
+    .p-c-lead {
         top: -54px;
     }
 
@@ -1986,12 +1996,17 @@ button {
         font-size: 45px;
     }
 
-    .media-ctrl-button-left, .media-ctrl-button-right, .c-btn-circle, .c-btn-circle-right, .service-items-title-btn-icon {
+    .media-ctrl-button-left,
+    .media-ctrl-button-right,
+    .c-btn-circle,
+    .c-btn-circle-right,
+    .service-items-title-btn-icon {
         width: 22.8px;
         height: 22.8px;
     }
 
-    .media-ctrl-icon, .c-btn-circle__ico {
+    .media-ctrl-icon,
+    .c-btn-circle__ico {
         width: 5px;
     }
 
@@ -2018,6 +2033,7 @@ button {
     .media {
         padding-top: 35.5px;
     }
+
     /*-----story------*/
 
     .story {
@@ -2168,24 +2184,27 @@ button {
         font-size: 17px;
     }
 
-    .service-items-link-figure img  {
+    .service-items-link-figure img {
         width: 100%;
     }
-   
+
     .service-contents-wrap-body {
         gap: 22px;
     }
-/*------------------本物がどこで横幅を制御しているのかが分からない-------------*/
+
+    /*------------------本物がどこで横幅を制御しているのかが分からない-------------*/
     .service-contents {
         width: 887px;
     }
 
     /*--achievents---*/
-    .awards-title h2, .client-title h2{
+    .awards-title h2,
+    .client-title h2 {
         font-size: 20px;
     }
 
-    .awards-li li, .client-text {
+    .awards-li li,
+    .client-text {
         font-size: 10px;
         margin-top: 22px;
     }
@@ -2285,7 +2304,8 @@ button {
         grid-template-columns: 318px 1fr;
     }
 
-    .footer-nav__link, .footer-nav__listLv2 a {
+    .footer-nav__link,
+    .footer-nav__listLv2 a {
         font-size: 10px;
     }
 
@@ -2298,7 +2318,8 @@ button {
         font-size: 17px;
     }
 
-    ._en, ._info  {
+    ._en,
+    ._info {
         font-size: 10.5px;
         margin-top: 18px;
     }
@@ -2388,16 +2409,20 @@ button {
     .nav_op .header-contact-sm {
         display: block;
     }
-/*-----------ハンバーガーメニューのボタンの形を変える指定----------------------------------*/
+
+    /*-----------ハンバーガーメニューのボタンの形を変える指定----------------------------------*/
 
     .nav_op .humberger-menu span {
         position: absolute;
         top: 50%;
         width: 38px;
-    }/*幅を38pxにして上下中央に位置決めする*/
+    }
+
+    /*幅を38pxにして上下中央に位置決めする*/
 
     .nav_op .humberger-menu span:nth-child(1) {
-        transform: scale(-1, -1) rotate(45deg);/*scale(-1, -1)でx軸に反転とy軸に反転の動作が入った後、rotate(45deg)によって45度に回転する*/
+        transform: scale(-1, -1) rotate(45deg);
+        /*scale(-1, -1)でx軸に反転とy軸に反転の動作が入った後、rotate(45deg)によって45度に回転する*/
         transition: 0.6s;
     }
 
@@ -2407,7 +2432,8 @@ button {
     }
 
     .nav_op .humberger-menu span:nth-child(3) {
-        transform: scale(-1, -1) rotate(-45deg);/*-45度に回転する*/
+        transform: scale(-1, -1) rotate(-45deg);
+        /*-45度に回転する*/
         transition: 0.6s;
     }
 
@@ -2416,7 +2442,7 @@ button {
         transition: 0.6s;
     }
 
-/*-----------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------*/
 
     .header-wrapper-nav {
         background: rgb(255, 255, 255);
@@ -2541,7 +2567,7 @@ button {
         mix-blend-mode: difference;
     }
 
-    
+
 
     .character {
         font-size: 38px;
@@ -2900,6 +2926,7 @@ button {
         margin-top: 19px;
         width: 100%;
     }
+
     .service {
         padding: 57px 0;
     }
@@ -3188,14 +3215,23 @@ button {
 
 /*------------------------------------------------タブレット834pxレスポンシブ--------------------------------------------------------*/
 @media (device-width: 834px) {
-    
-}
 
-/*----header----*/
-#header {
-    height: 83px;
-}
+    /*----header----*/
+    #header {
+        height: 83px;
+    }
 
-.header-humberger-menu  {
-    width: 111px;
+    .header-humberger-menu {
+        width: 111px;
+        height: 111px;
+    }
+
+    .header-wrapper-title img {
+        width: 77.8px;
+        height: 46px;
+    }
+
+    .top-contents-wrap::before {
+        top: 83px;
+    }
 }
