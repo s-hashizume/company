@@ -1886,7 +1886,7 @@ button {
 
 /*-----------------スマホ版-------------------------------------------------------------------------*/
 
-@media (max-width: 744px) {
+@media (max-width: 834px) {
 
     #header {
         height: 72px;
@@ -2734,5 +2734,123 @@ button {
     }
 }
 
-/*------------------------------タブレット1024pxレスポンシブ-------------------------------------*/
+/*------------------------------------------------タブレット834pxレスポンシブ--------------------------------------------------------*/
+@media (device-width: 834px) {
+
+    /*----header----*/
+    #header {
+        height: 83px;
+    }
+
+    .header-humberger-menu {
+        width: 111px;
+        height: 111px;
+    }
+
+    .header-wrapper-title img {
+        width: 77.8px;
+        height: 46px;
+    }
+
+    .top-contents-wrap::before {
+        top: 83px;
+    }
+
+    .header-wrapper-title {
+        top: 22px;
+        left: 22px;
+    }
+    
+    /*----top----*/
+
+    .top-contents-wrap-image {
+        top: 166.8px;
+    }
+
+    .top-contents-wrap-character {
+        top: 278px;
+        left: 22px;
+    }
+
+    .top-contents-wrap::before {
+        height: 472px;
+    }
+
+    .purpose {
+        padding: 128px 0 88px;
+    }
+
+    .p-container {
+        padding: 0 88px;
+    }
+
+    .p-c-lead::before {
+        right: 0;
+        margin: 0 auto;
+        width: 707px;
+        height: 111px;
+    }
+
+    .p-c-l__body {
+        font-size: 23px;
+    }
+
+    .p-c-l__head h2 {
+        font-size: 22px;
+    }
+
+    /*---media---*/
+    .media-container {
+        padding: 0 85px;
+    }
+
+    .slide {
+        width: 189px;
+    }
+
+    .p-top-blog__more-sm {
+        width: 683px;
+    }
+
+    /*--story---*/
+
+    .story {
+        padding-top: 111px;
+    }
+
+    .story-container {
+        padding: 0 85px;
+    }
+
+    .story-title {
+        left: 682px;
+    }
+
+    .story-description-text {
+        line-height: 37px;
+    }
+
+    .picture-woman {
+        left: 470px;
+    }
+
+    /*----service----*/
+
+    .service-container {
+        padding: 0 85px;
+    }
+
+    .service-items-link-figure img {
+        max-width: none;
+    }
+
+    .contact-recruit, .contact-inquiry {
+        padding-left: 85px;
+    }
+
+    .footer-container {
+        padding: 0 85px;
+    }
+
+}
 
