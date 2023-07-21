@@ -263,7 +263,9 @@ button {
     width: 2.5rem;
     background: #fff;
     top: calc(50% - 0.375rem);
-    left: 1.875rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     transition: 0.3s;
 }
 
@@ -288,9 +290,7 @@ button {
     height: 72px;
 }
 
-.scrolled .humberger-menu span {
-    left: calc(50% - 20px);
-}
+
 
 .header-contact-sm {
     display: none;
@@ -1973,8 +1973,12 @@ button {
     }
 
     .list_op .menu-allow {
-        transform: scale(-1, -1);
-        transition: 0.6s;
+        transform: scale(1, -1);
+        transition: 0.3s;
+    }
+
+    .menu-allow {
+        transition: 0.3s;
     }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1995,6 +1999,10 @@ button {
     .header-nav__listLv2 {
         margin-top: 19px;
         position: static;
+    }
+
+    .header-nav__listLv2 li {
+        border-bottom: none;
     }
 
     .header-wrapper-nav-list {
