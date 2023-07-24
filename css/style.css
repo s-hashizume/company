@@ -1903,7 +1903,7 @@ button {
 }
 
 
-@media (device-width: 1024px) {
+@media (max-device-width: 1024px) {
 
     /*--header--*/
     #header {
@@ -3231,7 +3231,5 @@ button {
         height: 46px;
     }
 
-    .top-contents-wrap::before {
-        top: 83px;
-    }
+
 }
