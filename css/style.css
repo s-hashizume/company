@@ -2767,6 +2767,16 @@ button {
         top: 166.8px;
     }
 
+    .top-images-wrapper {
+        width: auto;
+        height: auto;
+    }
+    
+    .top-images-pic img {
+        width: 294px;
+        height: 438px;
+    }
+
     .top-contents-wrap-character {
         top: 278px;
         left: 22px;
