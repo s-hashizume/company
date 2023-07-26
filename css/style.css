@@ -1071,6 +1071,10 @@ button {
 .feature-slide:nth-child(2) {
     background: #ebe7e1;
 }
+.feature-slide:nth-child(3) {
+    background: #dae3de;
+}
+
 
 .feature-slide {
     width: 864px;
@@ -2771,10 +2775,11 @@ button {
         width: auto;
         height: auto;
     }
-    
+
     .top-images-pic img {
         width: 294px;
         height: 438px;
+        object-fit: cover;
     }
 
     .top-contents-wrap-character {
@@ -2886,6 +2891,102 @@ button {
 
     .footer-link a {
         font-size: 13.3px;
+    }
+
+    /*------------------------------------------------タブレット768pxレスポンシブ--------------------------------------------------------*/
+    @media (max-width: 768px) {
+
+        #header {
+            height: 76.7px;
+        }
+
+        .header-wrapper-title img {
+            width: 71px;
+            height: 42px;
+        }
+        .header-humberger-menu {
+            width: 102px;
+            height: 102px;
+        }
+        /*---top---*/
+        .top-contents-wrap-image {
+            top: 153px;
+        }
+
+        .top-contents-wrap-image {
+            width: 275px;
+        }
+
+        .top-contents-wrap::before {
+            height: 435px;
+        }
+
+        .purpose {
+            padding: 63px 0 82px;
+        }
+
+        .p-c-l__head h2 {
+            font-size: 20px;
+        }
+
+        .p-c-lead::before {
+            width: 651px;
+        }
+        /*---media--*/
+        .p-top-blog__more-sm {
+            width: 610px;
+            margin-top: 57px;
+        }
+        /*---story---*/
+
+        .picture-woman {
+            left: 425px;
+            top: 567px;
+        }
+        .picture-man {
+            top: 473px;
+            width: 116px;
+            height: 190px;
+        }
+
+        .story-title {
+            left: 573px;
+        }
+
+        .story-title svg {
+            font-size: 17px;
+        }
+
+
+        /*---feature---*/
+
+        .feature-container {
+            padding: 0 78px;
+        }
+
+        .feature-slide {
+            width: 302px;
+        }
+        /*---service---*/
+        /*---achievent---*/
+        .achievements-container {
+            padding: 0 78px;
+        }
+
+        .client-text {
+            margin-top: 32px;
+        }
+
+        .client-logos {
+            margin: 20px 0 0 0 ;
+        }
+        /*---contact---*/
+        .contact-recruit, .contact-inquiry {
+           padding-left: 78px;
+        }
+        /*---footer---*/
+
+
     }
 
 }
