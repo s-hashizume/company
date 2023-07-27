@@ -115,7 +115,9 @@ setTimeout(function(){
 //--------------------アコーディオンメニューの設定------------------------
 
 $(function(){//slide toggleを使ってみる
-    if('ontouchstart' in window) {
+    let windowWidth = $(window).width();
+    let windowSm = 834;
+    if('ontouchstart' in window && windowWidth <= windowSm) {
         $('.header-wrapper-menu-button').on('click',function(){
             $(this).toggleClass('open');
             $(this).parent().find('.header-nav__listLv2').slideToggle();

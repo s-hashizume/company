@@ -1891,7 +1891,14 @@ button {
         background: #D9D9D9;
         margin-right: 11.5px;
     }
+
+    .enterprise:hover .header-nav__listLv2,
+    .characteristic:hover .header-nav__listLv2,
+    .menu-service:hover .header-nav__listLv2 {
+        display: none;
+    }
 }
+
 /*---------------------------iPad Pro 12.9インチのレスポンシブ-----------------------------*/
 @media (max-width: 1024px) and (min-width: 835px) {
 
@@ -3340,6 +3347,7 @@ button {
     .feature-container {
         padding: 0 85px;
     }
+
     .feature-slide {
         width: 334px;
     }
@@ -3413,12 +3421,14 @@ button {
         font-size: 13.3px;
     }
 
-    .footer-nav__link span, .footer-nav__list a {
+    .footer-nav__link span,
+    .footer-nav__list a {
         font-size: 17.7px;
     }
 
-    
+
 }
+
 @media (min-width: 810px) and (max-width) {
     .story-background-bottom {
         bottom: -50px;
@@ -3525,6 +3535,7 @@ button {
     .service-sentence {
         line-height: 25px;
     }
+
     /*---achievent---*/
     .achievements-container {
         padding: 0 78px;
@@ -3552,7 +3563,9 @@ button {
 }
 
 @media (width: 744px) {
-    .footer-nav__link span, .footer-nav__list a {
+
+    .footer-nav__link span,
+    .footer-nav__list a {
         font-size: 14.8px;
     }
 }
