@@ -1860,7 +1860,7 @@ button {
     }
 }
 
-/*-----------------タブレット版-------------------------------------------------------------------------*/
+
 
 
 @media (min-width: 1024px) {
@@ -1878,7 +1878,7 @@ button {
 
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
     .hidden-allow {
         display: none;
     }
@@ -2565,6 +2565,8 @@ button {
         top: 220px;
         left: 9px;
         mix-blend-mode: difference;
+        color: white;
+        /*上記によって文字色を白にしている状態で、背景色が白に比べて差異の程度を色として反映している*/
     }
 
 
@@ -2573,12 +2575,6 @@ button {
         font-size: 38px;
         letter-spacing: -1px;
         line-height: 48px;
-    }
-
-    .character span {
-        color: white;
-        mix-blend-mode: difference;
-        /*上記によって文字色を白にしている状態で、背景色が白に比べて差異の程度を色として反映している*/
     }
 
     .nav_op .character {
@@ -3560,12 +3556,9 @@ button {
     }
 
     /*---footer---*/
-}
-
-@media (width: 744px) {
-
     .footer-nav__link span,
     .footer-nav__list a {
         font-size: 14.8px;
     }
 }
+

@@ -116,7 +116,7 @@ setTimeout(function(){
 
 $(function(){//slide toggleを使ってみる
     let windowWidth = $(window).width();
-    let windowSm = 834;
+    const windowSm = 834;
     if('ontouchstart' in window && windowWidth <= windowSm) {
         $('.header-wrapper-menu-button').on('click',function(){
             $(this).toggleClass('open');
