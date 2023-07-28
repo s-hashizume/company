@@ -2182,6 +2182,68 @@ button {
     }
 }
 
+/*---------------------------1133px〜1080pxのレスポンシブ-----------------------------------------*/
+
+@media (max-width: 1120px) and (min-width: 1080px) {
+    .p-c-lead::before {
+        left: 238px;
+        width: 500px;
+        height: 205px;
+    }
+
+    .media-container {
+        padding: 0 98px;
+    }
+
+    .p-top-blog__more {
+        font-size: 11.5px;
+    }
+
+    .media-ctrl-button-right, .media-ctrl-button-left {
+        width: 25px;
+        height: 25px;
+    }
+
+    .c-card-blog__title {
+        line-height: 16px;
+    }
+
+    .story {
+        margin-top: 15px;
+        padding-top: 86px;
+    }
+
+    .story-title {
+        left: 411px;
+    }
+
+    .story-background-bottom {
+        left: 527px;
+    }
+
+    .feature-slide {
+        width: 667px;
+    }
+
+    .footer-content {
+        padding: 126px 0 149px;
+    }
+
+    .footer-pagetop {
+        height: 49px;
+    }
+
+    .footer-pagetop a {
+        width: 197px;
+    }
+
+    .footer-wrap {
+        grid-template-columns: 399px 1fr;
+    }
+}
+
+
+
 /*---------------------------iPad Pro 12.9インチのレスポンシブ-----------------------------*/
 @media (max-width: 1024px) and (min-width: 835px) {
 
