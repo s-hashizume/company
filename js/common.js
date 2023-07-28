@@ -133,24 +133,35 @@ $('.header-wrapper-nav-list li').on('click', function () {
 //--------------------アコーディオンメニューの設定------------------------
 
 
-$(window).on('load orientationchange', function() {
+// $(window).on('load orientationchange', function() {
+//     responsiveClickDisable();
+// });
+
+// function responsiveClickDisable() {
+//     let windowWidth = $(window).width();
+//     let windowSm = 834;
+//     if(windowWidth <= windowSm) {//画面表示幅がwindowSm以下であった場合、以下の関数を実行する
+//         $('.header-wrapper-menu-button').on('click',function(){
+//             $(this).toggleClass('open');
+//             $(this).parent().find('.header-nav__listLv2').slideToggle();
+//         });
+//     }
+// }
+
+$(window).on('load resize orientationchange', function() {
     responsiveClickDisable();
 });
 
 function responsiveClickDisable() {
     let windowWidth = $(window).width();
-    let windowSm = 834;
-    if(windowWidth <= windowSm) {//画面表示幅がwindowSm以下であった場合、以下の関数を実行する
-        $('.header-wrapper-menu-button').on('click',function(){
+    const windowSm = 834;
+    // クリックイベントを無効化
+    $('.header-wrapper-menu-button').off('click');
+    if(windowWidth <= windowSm) {
+        // ウィンドウの幅がwindowSm以下の時だけ、クリックイベントを追加する
+        $('.header-wrapper-menu-button').on('click', function(){
             $(this).toggleClass('open');
             $(this).parent().find('.header-nav__listLv2').slideToggle();
         });
     }
 }
-
-$(window).on('orientationchange',function(){//これが実行できたので、回転は認識されている
-    //ここに画面回転時に処理したい内容
-    alert("orientationchangeイベントが発生しました。");
-});
-
-
