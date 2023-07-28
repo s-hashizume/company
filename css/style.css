@@ -1922,6 +1922,8 @@ button {
     }
 }
 
+/*---------------------------1194px〜1080pxのレスポンシブ-----------------------------------------*/
+
 @media (max-width: 1194px) and (min-width: 1080px) {
     .p-c-l__body {
         font-size: 41px;
@@ -2109,6 +2111,8 @@ button {
     }
 }
 
+/*---------------------------1180px〜1080pxのレスポンシブ-----------------------------------------*/
+
 @media (max-width: 1180px) and (min-width: 1080px) {
     .feature-slide {
         width: 708px;
@@ -2128,6 +2132,53 @@ button {
 
     .footer-nav__listLv2 li {
         line-height: 19px;
+    }
+}
+
+/*---------------------------1133px〜1080pxのレスポンシブ-----------------------------------------*/
+@media (max-width: 1133px) and (min-width: 1080px) {
+    .c-card-blog__pic img  {
+        width: 252px;
+    }
+
+    .picture-woman {
+        width: 202px;
+    }
+
+    .story-description {
+        width: 503px;
+    }
+
+    .story-container {
+        padding: 0 50px;
+    }
+
+    .story-background-bottom, .story-background-top {
+        font-size: 125px;
+    }
+
+    .story-background-bottom {
+        left: 557px;
+    }
+
+    .feature-slide {
+        width: 680px;
+    }
+
+    .service-containe {
+        padding: 0 100px;
+    }
+
+    .service-items-link-figure img {
+        width: 310px;
+    }
+
+    .contact-body h3 {
+        font-size: 24px;
+    }
+
+    .footer-wrap {
+        grid-template-columns:410px 1fr;
     }
 }
 
