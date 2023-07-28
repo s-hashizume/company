@@ -1878,7 +1878,7 @@ button {
 
 }
 
-@media (max-width: 1366px){
+@media (max-width: 834px){
     .hidden-allow {
         display: none;
     }
