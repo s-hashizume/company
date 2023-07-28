@@ -1922,6 +1922,215 @@ button {
     }
 }
 
+@media (max-width: 1194px) and (min-width: 1080px) {
+    .p-c-l__body {
+        font-size: 41px;
+    }
+
+    .p-c-lead {
+        top: -62px;
+    }
+
+    .c-card-blog__pic img {
+        width: 265px;
+    }
+
+    .c-card-blog__title {
+        font-size: 12px;
+    }
+
+    .story-description {
+        width: 530px;
+    }
+
+    .picture-woman {
+        width: 223px;
+        top: 341px;
+        left: 133px;
+    }
+
+    .story-more {
+        width: 213px;
+        top: 659px;
+        left: 131px;
+    }
+
+    .story-more-link {
+        padding: 16px 16px 16px 0;
+    }
+
+    .story-more-link span {
+        font-size: 12px;
+    }
+
+    .picture-man {
+        width: 133px;
+        top: 510px;
+    }
+
+    .story-contents {
+        padding: 215px 0 207px;
+    }
+
+    .story-title {
+        width: 44px;
+        left: 426px;
+    }
+
+    .story-background-bottom {
+        left: 514px;
+    }
+
+    .story-background-top {
+        top: 209px;
+    }
+
+    .story-background-bottom, .story-background-top {
+        font-size: 145px;
+    }
+
+    .story-description-text {
+        line-height: 35px;
+        font-size: 14px;
+    }
+
+    .feature-slide {
+        width: 716px;
+    }
+
+    .c-card-feature-case__pic {
+        width: 451px;
+    }
+
+    .c-card-feature-case__meta dt {
+        font-size: 10px;
+    }
+
+    .c-card-feature-case__meta dd {
+        font-size: 12px;
+    }
+
+    .c-card-feature-case__link {
+        padding: 71px 51px 26px;
+    }
+
+    .service-items-link-figure img {
+        width: 327px;
+    }
+
+    .service {
+        padding: 92px 0 107px;
+    }
+
+    .service-sentence {
+        font-size: 14px;
+        line-height: 25px;
+        margin-top: 24px;
+    }
+
+    .service-contents {
+        margin-top: 49px;
+    }
+
+    .service-items-title p {
+        font-size: 19px;
+    }
+
+    .service-items-title-btn {
+        top: -6px;
+    }
+
+    .contact-link {
+        height: 345px;
+    }
+
+    .contact-body h3 {
+        font-size: 26px;
+    }
+
+    .contact-container {
+        padding: 0 106px;
+    }
+
+    .contact-wrap  {
+        padding-top: 123px;
+    }
+
+    .contact-title {
+        width: 318px;
+    }
+
+    .recruit-btn-simbol {
+        width: 77px;
+        height: 77px;
+    }
+
+    .contact-body p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .footer-nav__link {
+        font-size: 12px;
+    }
+
+    .footer-nav__listLv2 a {
+        font-size: 10px;
+    }
+
+    .footer-nav__listLv2 li {
+        margin-top: 8px;
+        line-height: 11px;
+    }
+
+    .footer-nav__list {
+        gap: 44px;
+    }
+
+    ._name {
+        font-size: 19px;
+    }
+
+    ._en, ._info, .footer-request {
+        font-size: 12px;
+    }
+
+    .footer-report {
+        height: 50px;
+    }
+
+    .footer-bnr img {
+        width: 174px;
+        height: 55px;
+    }
+
+    .footer-bnr {
+        width: 369px;
+    }
+}
+
+@media (max-width: 1180px) and (min-width: 1080px) {
+    .feature-slide {
+        width: 708px;
+    }
+
+    .service-items-link-figure img {
+        width: 323px;
+    }
+
+    .service-container {
+        padding: 0 104px;
+    }
+
+    .footer-container {
+        padding: 0 52px;
+    }
+
+    .footer-nav__listLv2 li {
+        line-height: 19px;
+    }
+}
+
 /*---------------------------iPad Pro 12.9インチのレスポンシブ-----------------------------*/
 @media (max-width: 1024px) and (min-width: 835px) {
 
