@@ -112,19 +112,6 @@ setTimeout(function(){
 }, 4500);
 
 
-//--------------------アコーディオンメニューの設定------------------------
-
-$(function(){//slide toggleを使ってみる
-    let windowWidth = $(window).width();
-    const windowSm = 834;
-    if('ontouchstart' in window && windowWidth <= windowSm) {
-        $('.header-wrapper-menu-button').on('click',function(){
-            $(this).toggleClass('open');
-            $(this).parent().find('.header-nav__listLv2').slideToggle();
-        });
-    }
-});
-
 //---------------------アコーディオンメニューの矢印方向を変える-----------------------
 
 $(window).on('load', function () {
@@ -141,4 +128,29 @@ $('.header-wrapper-nav-list li').on('click', function () {
         condition = false;
     }
 });
+
+
+//--------------------アコーディオンメニューの設定------------------------
+
+
+$(window).on('load orientationchange', function() {
+    responsiveClickDisable();
+});
+
+function responsiveClickDisable() {
+    let windowWidth = $(window).width();
+    let windowSm = 834;
+    if(windowWidth <= windowSm) {//画面表示幅がwindowSm以下であった場合、以下の関数を実行する
+        $('.header-wrapper-menu-button').on('click',function(){
+            $(this).toggleClass('open');
+            $(this).parent().find('.header-nav__listLv2').slideToggle();
+        });
+    }
+}
+
+$(window).on('orientationchange',function(){//これが実行できたので、回転は認識されている
+    //ここに画面回転時に処理したい内容
+    alert("orientationchangeイベントが発生しました。");
+});
+
 
