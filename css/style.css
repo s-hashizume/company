@@ -1899,8 +1899,8 @@ button {
     }
 }
 
-/*---------------------------1366px〜1080pxのレスポンシブ-----------------------------------------*/
-@media (max-width: 1366px) and (min-width: 1080px) {
+/*---------------------------1366px〜1025pxのレスポンシブ-----------------------------------------*/
+@media (max-width: 1366px) and (min-width: 1025px) {
     .story-background-bottom {
         left: 598px;
     }
@@ -1924,7 +1924,7 @@ button {
 
 /*---------------------------1194px〜1080pxのレスポンシブ-----------------------------------------*/
 
-@media (max-width: 1194px) and (min-width: 1080px) {
+@media (max-width: 1194px) and (min-width: 1025px) {
     .p-c-l__body {
         font-size: 41px;
     }
@@ -2109,11 +2109,32 @@ button {
     .footer-bnr {
         width: 369px;
     }
+
+    #header {
+        height: 99.5px;
+    }
+
+    .header-wrapper-nav-list-link, .header-wrapper-menu-button {
+        font-size: 12px;
+    }
+
+    .header-wrapper-contact {
+        width: 185px;
+        height: 139px;
+    }
+
+    .header-wrapper-contact a {
+        font-size: 12px;
+    }
+
+    .top-contents-wrap {
+        margin-top: 99.5px;
+    }
 }
 
 /*---------------------------1180px〜1080pxのレスポンシブ-----------------------------------------*/
 
-@media (max-width: 1180px) and (min-width: 1080px) {
+@media (max-width: 1180px) and (min-width: 1025px) {
     .feature-slide {
         width: 708px;
     }
@@ -2133,10 +2154,14 @@ button {
     .footer-nav__listLv2 li {
         line-height: 19px;
     }
+
+    .header-wrapper-nav {
+        right: 213px;
+    }
 }
 
 /*---------------------------1133px〜1080pxのレスポンシブ-----------------------------------------*/
-@media (max-width: 1133px) and (min-width: 1080px) {
+@media (max-width: 1133px) and (min-width: 1025px) {
     .c-card-blog__pic img  {
         width: 252px;
     }
@@ -2180,11 +2205,25 @@ button {
     .footer-wrap {
         grid-template-columns:410px 1fr;
     }
+
+    .header-wrapper-title img {
+        width: 66px;
+    }
+
+    .header-wrapper-title {
+        top: 26px;
+        left: 50px;
+    }
+
+    .header-wrapper-contact {
+        width: 176px;
+        height: 132px;
+    }
 }
 
-/*---------------------------1133px〜1080pxのレスポンシブ-----------------------------------------*/
+/*---------------------------1112px〜1080pxのレスポンシブ-----------------------------------------*/
 
-@media (max-width: 1120px) and (min-width: 1080px) {
+@media (max-width: 1112px) and (min-width: 1025px) {
     .p-c-lead::before {
         left: 238px;
         width: 500px;
@@ -2239,6 +2278,94 @@ button {
 
     .footer-wrap {
         grid-template-columns: 399px 1fr;
+    }
+
+    .header-wrapper-nav-list {
+        gap: 21px;
+    }
+
+    .header-wrapper-contact {
+        width: 172px;
+        height: 129px;
+    }
+}
+
+/*---------------------------1080pxのレスポンシブ-----------------------------------------*/
+
+@media (max-width: 1080px) and (min-width: 1025px) {
+    .p-c-lead {
+        top: -58px;
+    }
+
+    .p-c-l__body {
+        font-size: 37.5px;
+    }
+
+    .media-top-blog__head h2 {
+        font-size: 40px;
+    }
+
+    .media-slide {
+        margin-top: 28px;
+    }
+
+    .story-contents {
+        padding: 195px 0 187px;
+    }
+
+    .story-title {
+        top: 81px;
+        left: 394px;
+    }
+
+    .story-background-bottom {
+        left: 496px;
+    }
+
+    .feature {
+        padding: 86px 0 93px;
+    }
+
+    .feature__head h2 {
+        font-size: 22px;
+    }
+
+    .feature-slide {
+        width: 648px;
+    }
+
+    .c-btn-circle-right, .c-btn-circle {
+        width: 24px;
+        height: 24px;
+    }
+
+    .service-head h2 {
+        font-size: 40px;
+    }
+
+    .service-contents-wrap-body {
+        gap: 23px;
+    }
+
+    .service-items-link-figure img {
+        width: 296px;
+    }
+
+    .recruit-btn  {
+        right: 32px;
+    }
+
+    .contact-title {
+        width: 289px;
+    }
+
+    .footer-wrap {
+        grid-template-columns: 358px 1fr;
+    }
+
+    .header-wrapper-contact {
+        width: 168px;
+        height: 126px;
     }
 }
 
