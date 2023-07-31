@@ -2864,12 +2864,6 @@ button {
         position: fixed;
     }
 
-    /* .enterprise:hover .header-nav__listLv2,
-    .characteristic:hover .header-nav__listLv2,
-    .menu-service:hover .header-nav__listLv2 {
-        display: none;
-    } */
-
     .nav_op .header-wrapper-nav {
         transform: none;
         transition: 0.5s;
