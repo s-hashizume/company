@@ -87,27 +87,27 @@ $('.header-humberger-menu').on('click', function () {
 // $slide.find(".slick-slide").eq(0).addClass("slide-animation");
 
 
-setTimeout(function(){
+setTimeout(function () {
     const $slide = $(".change-slides")
-    .slick({
-        fade: true,    // fedeオン
-        speed: 1500,   // 画像切り替えにかかる時間（ミリ秒）
-        autoplaySpeed: 3000,   // 自動スライド切り替え速度
-        arrows: false,         // 矢印表示・非表示
-        autoplay: true,        // 自動再生
-        slidesToShow: 1,       // スライド表示数
-        slidesToScroll: 1,     // スライドする数
-        infinite: true         // 無限リピート オン・オフ
-    })
-    .on({
-        beforeChange: function(event, slick, currentSlide, nextSlide) {
-            $(".slick-slide", this).eq(currentSlide).addClass("preve-slide");
-            $(".slick-slide", this).eq(nextSlide).addClass("slide-animation");
-        },
-        afterChange: function() {
-            $(".preve-slide", this).removeClass("preve-slide slide-animation");
-        }
-    });
+        .slick({
+            fade: true,    // fedeオン
+            speed: 1500,   // 画像切り替えにかかる時間（ミリ秒）
+            autoplaySpeed: 3000,   // 自動スライド切り替え速度
+            arrows: false,         // 矢印表示・非表示
+            autoplay: true,        // 自動再生
+            slidesToShow: 1,       // スライド表示数
+            slidesToScroll: 1,     // スライドする数
+            infinite: true         // 無限リピート オン・オフ
+        })
+        .on({
+            beforeChange: function (event, slick, currentSlide, nextSlide) {
+                $(".slick-slide", this).eq(currentSlide).addClass("preve-slide");
+                $(".slick-slide", this).eq(nextSlide).addClass("slide-animation");
+            },
+            afterChange: function () {
+                $(".preve-slide", this).removeClass("preve-slide slide-animation");
+            }
+        });
     $slide.find(".slick-slide").eq(0).addClass("slide-animation");
 }, 4500);
 
@@ -148,18 +148,33 @@ $('.header-wrapper-nav-list li').on('click', function () {
 //     }
 // }
 
-$(window).on('load resize orientationchange', function() {
-    responsiveClickDisable();
+$(window).on('load', function () {
+    console.log('load');
+    headerMenu();
 });
 
-function responsiveClickDisable() {
-    let windowWidth = $(window).width();
+
+
+
+
+let timer = false;//変数timerに"false"を代入する
+$(window).on('resize', function () {//windowをターゲットとして"resize"された時の関数について定義する
+    if (timer !== false) {
+        clearTimeout(timer);//timerが「false(初期値)でない」場合、timeoutはキャンセルされる
+    }
+    timer = setTimeout(function () {//新しいタイマーIDはtimer変数に格納される
+        // リサイズ後に行う処理
+        headerMenu();//関数headerMenuを実行する
+    }, 200);//200msのラグをおく
+});
+
+
+function headerMenu() {
+    const windowWidth = $(window).width();
     const windowSm = 834;
-    // クリックイベントを無効化
-    $('.header-wrapper-menu-button').off('click');
-    if(windowWidth <= windowSm) {
+    if (windowWidth <= windowSm) {
         // ウィンドウの幅がwindowSm以下の時だけ、クリックイベントを追加する
-        $('.header-wrapper-menu-button').on('click', function(){
+        $('.header-wrapper-menu-button').on('click', function () {
             $(this).toggleClass('open');
             $(this).parent().find('.header-nav__listLv2').slideToggle();
         });
