@@ -153,16 +153,13 @@ $(window).on('load', function () {
     headerMenu();
 });
 
-
-
-
-
 let timer = false;//変数timerに"false"を代入する
 $(window).on('resize', function () {//windowをターゲットとして"resize"された時の関数について定義する
     if (timer !== false) {
         clearTimeout(timer);//timerが「false(初期値)でない」場合、timeoutはキャンセルされる
     }
     timer = setTimeout(function () {//新しいタイマーIDはtimer変数に格納される
+        console.log(`resize`)
         // リサイズ後に行う処理
         headerMenu();//関数headerMenuを実行する
     }, 200);//200msのラグをおく
@@ -172,6 +169,9 @@ $(window).on('resize', function () {//windowをターゲットとして"resize"�
 function headerMenu() {
     const windowWidth = $(window).width();
     const windowSm = 834;
+    console.log(windowWidth)
+    // クリックイベントを無効化
+    $('.header-wrapper-menu-button').off('click');
     if (windowWidth <= windowSm) {
         // ウィンドウの幅がwindowSm以下の時だけ、クリックイベントを追加する
         $('.header-wrapper-menu-button').on('click', function () {
