@@ -168,7 +168,7 @@ $(window).on('resize', function () {//windowをターゲットとして"resize"�
 
 function headerMenu() {
     const windowWidth = $(window).width();
-    const windowSm = 834;
+    const windowSm = 1367;
     console.log(windowWidth)
     // クリックイベントを無効化
     $('.header-wrapper-menu-button').off('click');
