@@ -140,36 +140,30 @@ $(window).on('load', function () {
     humbergerMenu();
 });
 
-let timer = false;//変数timerに"false"を代入する
-$(window).on('resize', function () {//windowをターゲットとして"resize"された時の関数について定義する
-    if (timer !== false) {
-        clearTimeout(timer);//timerが「false(初期値)でない」場合、timeoutはキャンセルされる
-    }
-    timer = setTimeout(function () {//新しいタイマーIDはtimer変数に格納される
-        console.log(`resize`)
-        // リサイズ後に行う処理
-        humbergerMenu();//関数headerMenuを実行する
-    }, 200);//200msのラグをおく
-});
+// let timer = false;//変数timerに"false"を代入する
+// $(window).on('resize', function () {//windowをターゲットとして"resize"された時の関数について定義する
+//     if (timer !== false) {
+//         clearTimeout(timer);//timerが「false(初期値)でない」場合、timeoutはキャンセルされる
+//     }
+//     timer = setTimeout(function () {//新しいタイマーIDはtimer変数に格納される
+//         console.log(`resize`)
+//         // リサイズ後に行う処理
+//         humbergerMenu();//関数headerMenuを実行する
+//     }, 200);//200msのラグをおく
+// });
 
 
 function humbergerMenu() {
-    const windowWidth = $(window).width();
-    const windowSm = 1366;
-    console.log(windowWidth)
-    // クリックイベントを無効化
-    $('.header-wrapper-menu-button').off('click');
-    if (windowWidth <= windowSm) {
-        // ウィンドウの幅がwindowSm以下の時だけ、クリックイベントを追加する
+    if ('ontouchstart' in window || navigator.maxTouchPoints) {
         $('.header-wrapper-menu-button').on('click', function () {
-            $(this).toggleClass('open');
-            $(this).parent().find('.header-nav__listLv2').slideToggle();
+            $(this).toggleClass('open');//<div class = "header-wrapper-menu-button open">と付与される
+            $(this).parent().find('.header-nav__listLv2').slideToggle();//これにより"header-nav__listLv2"がスライドアップ&ダウンする
         });
     }
 }
 
 $(document).ready(function(){
-    if ('ontachstart' in window || navigator.maxTouchPoints) {
+    if ('ontouchstart' in window || navigator.maxTouchPoints) {//タッチデバイスであるかどうか　もしくは　ブラウザやデバイスのタッチ点が１以上の時
         $('body').addClass('touch-device');
     }
 });
