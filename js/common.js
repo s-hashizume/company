@@ -133,24 +133,11 @@ $('.header-wrapper-nav-list li').on('click', function () {
 //--------------------アコーディオンメニューの設定------------------------
 
 
-// $(window).on('load orientationchange', function() {
-//     responsiveClickDisable();
-// });
 
-// function responsiveClickDisable() {
-//     let windowWidth = $(window).width();
-//     let windowSm = 834;
-//     if(windowWidth <= windowSm) {//画面表示幅がwindowSm以下であった場合、以下の関数を実行する
-//         $('.header-wrapper-menu-button').on('click',function(){
-//             $(this).toggleClass('open');
-//             $(this).parent().find('.header-nav__listLv2').slideToggle();
-//         });
-//     }
-// }
 
 $(window).on('load', function () {
     console.log('load');
-    headerMenu();
+    humbergerMenu();
 });
 
 let timer = false;//変数timerに"false"を代入する
@@ -161,12 +148,12 @@ $(window).on('resize', function () {//windowをターゲットとして"resize"�
     timer = setTimeout(function () {//新しいタイマーIDはtimer変数に格納される
         console.log(`resize`)
         // リサイズ後に行う処理
-        headerMenu();//関数headerMenuを実行する
+        humbergerMenu();//関数headerMenuを実行する
     }, 200);//200msのラグをおく
 });
 
 
-function headerMenu() {
+function humbergerMenu() {
     const windowWidth = $(window).width();
     const windowSm = 1366;
     console.log(windowWidth)
@@ -180,3 +167,10 @@ function headerMenu() {
         });
     }
 }
+
+$(document).ready(function(){
+    if ('ontachstart' in window || navigator.maxTouchPoints) {
+        $('body').addClass('touch-device');
+    }
+});
+

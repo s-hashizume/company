@@ -1860,6 +1860,12 @@ button {
     }
 }
 
+.touch-device .enterprise:hover .header-nav__listLv2,
+.touch-device .characteristic:hover .header-nav__listLv2,
+.touch-device .menu-service:hover .header-nav__listLv2 {
+    display: none;
+}
+
 
 
 
@@ -1888,13 +1894,9 @@ button {
         margin-right: 11.5px;
     }
 }
-@media (max-width: 1366px) {
-    .enterprise:hover .header-nav__listLv2,
-    .characteristic:hover .header-nav__listLv2,
-    .menu-service:hover .header-nav__listLv2 {
-        display: none;
-    }
-}
+
+
+
 
 /*---------------------------1366px〜1025pxのレスポンシブ-----------------------------------------*/
 @media (max-width: 1366px) and (min-width: 1025px) {
