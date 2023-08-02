@@ -136,7 +136,7 @@ $('.header-wrapper-nav-list li').on('click', function () {
 
 
 $(window).on('load', function () {
-    console.log('load');
+    // console.log('load');
     humbergerMenu();
 });
 
