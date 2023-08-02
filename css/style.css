@@ -3039,6 +3039,7 @@ button {
         mix-blend-mode: difference;
         color: white;
         /*上記によって文字色を白にしている状態で、背景色が白に比べて差異の程度を色として反映している*/
+        z-index: 2;
     }
 
 
@@ -3062,7 +3063,7 @@ button {
         left: auto;
         right: 0;
         width: 258.641px;
-        z-index: -1;
+        z-index: 1;
     }
 
     .top-images-wrapper {
