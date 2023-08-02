@@ -332,7 +332,7 @@ button {
     position: absolute;
     top: 140px;
     left: 128px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .character {
@@ -3039,6 +3039,7 @@ button {
         mix-blend-mode: difference;
         color: white;
         /*上記によって文字色を白にしている状態で、背景色が白に比べて差異の程度を色として反映している*/
+        z-index: 2;
     }
 
 
